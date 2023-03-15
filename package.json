@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://strictly-rigid.github.io/simply-chocolate-super-team",
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/vanilla-app-template/",
