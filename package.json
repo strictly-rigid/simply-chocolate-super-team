@@ -6,7 +6,7 @@
   "homepage": "https://strictly-rigid.github.io/simply-chocolate-super-team",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build --base=/simply-chocolate-super-team/",
     "preview": "vite preview"
   },
   "devDependencies": {
