@@ -1,14 +1,22 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="simple-close-btn" viewBox="0 0 32 32">
+<path stroke-width="2.2857" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M24 8l-16 16"></path>
+<path stroke-width="2.2857" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M8 8l16 16"></path>
+</symbol>
+<symbol id="chocolate-logo" viewBox="0 0 32 32">
+<path fill="#fcf1e0" style="fill: var(--color1, #fcf1e0)" d="M3.944 20.076l10.777-17.424 0.64-0.674 8.236 5.491 0.056 3.314 2.010 3.28-8.88 14.077-12.839-8.063z"></path>
+<path fill="none" stroke="#fd9222" stroke-width="2.6667" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color2, #fd9222)" d="M21.635 23.88l-14.185-8.864M11.361 8.599l14.185 8.864M10.63 25.864l11.736-19.25M27.176 14.789c-3.040-1.899-4.234-3.384-2.278-6.592l-9.626-6.015-11.736 19.25 14.186 8.864 9.454-15.507z"></path>
+</symbol>
 <symbol id="burger-menu" viewBox="0 0 32 32">
 <path stroke-width="2.5" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M4 16h24M4 8h24M4 24h24"></path>
 </symbol>
 <symbol id="scroll-btn" viewBox="0 0 32 32">
-<path fill="#fff" style="fill: var(--color1, #fff)" d="M16 32c8.837 0 16-7.163 16-16s-7.163-16-16-16c-8.837 0-16 7.163-16 16s7.163 16 16 16z"></path>
+<path fill="#fff" style="fill: var(--color3, #fff)" d="M16 32c8.837 0 16-7.163 16-16s-7.163-16-16-16c-8.837 0-16 7.163-16 16s7.163 16 16 16z"></path>
 <path fill="#fd9222" style="fill: var(--color2, #fd9222)" d="M16.548 17.081c-0.072 0.072-0.157 0.13-0.251 0.169s-0.195 0.059-0.297 0.059-0.203-0.020-0.297-0.059c-0.094-0.039-0.179-0.097-0.251-0.169l-3.535-3.543c-0.072-0.072-0.157-0.13-0.251-0.169s-0.195-0.059-0.297-0.059-0.203 0.020-0.297 0.059c-0.094 0.039-0.179 0.097-0.251 0.169-0.144 0.145-0.225 0.34-0.225 0.544s0.081 0.4 0.225 0.544l3.543 3.543c0.434 0.434 1.023 0.677 1.636 0.677s1.202-0.244 1.636-0.677l3.543-3.543c0.143-0.144 0.223-0.338 0.224-0.54 0.001-0.102-0.019-0.202-0.057-0.296s-0.095-0.18-0.167-0.252c-0.072-0.072-0.157-0.13-0.251-0.169s-0.195-0.059-0.297-0.059-0.203 0.020-0.297 0.059c-0.094 0.039-0.179 0.097-0.251 0.169l-3.535 3.543z"></path>
 </symbol>
 <symbol id="close-btn" viewBox="0 0 32 32">
-<path fill="#fcf1e0" style="fill: var(--color3, #fcf1e0)" d="M30.4 15.2c0 8.395-6.805 15.2-15.2 15.2s-15.2-6.805-15.2-15.2c0-8.395 6.805-15.2 15.2-15.2s15.2 6.805 15.2 15.2z"></path>
+<path fill="#fcf1e0" style="fill: var(--color1, #fcf1e0)" d="M30.4 15.2c0 8.395-6.805 15.2-15.2 15.2s-15.2-6.805-15.2-15.2c0-8.395 6.805-15.2 15.2-15.2s15.2 6.805 15.2 15.2z"></path>
 <path fill="none" stroke="#000" stroke-width="1.6" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color4, #000)" d="M19.6 10.8l-8.8 8.8"></path>
 <path fill="none" stroke="#000" stroke-width="1.6" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color4, #000)" d="M10.8 10.8l8.8 8.8"></path>
 </symbol>
