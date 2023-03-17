@@ -1,8 +1,8 @@
 (() => {
     const refs = {
-openMenuBtn:document.querySelector('[header-data-menu-open]'),
-closeMenuBtn:document.querySelector('[header-data-menu-close]'),
-menu: document.querySelector('[header-data-menu]'),
+openMenuBtn:document.querySelector('[data-menu-open]'),
+closeMenuBtn:document.querySelector('[data-menu-close]'),
+menu: document.querySelector('[data-menu]'),
     };
 
     refs.openMenuBtn.addEventListener("click", toggleModal);
