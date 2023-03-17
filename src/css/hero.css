@@ -1,0 +1,265 @@
+.visuality-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 0px 20px;
+}
+
+
+
+.hero__bcg {
+    padding: 375px 20px 20px 20px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 375px;
+    border-radius: 30px;
+
+    background-image: url(../img/Hero__Sergey/chocolate-covered-cocoa-powdermobile@1x.jpg);
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
+    .hero__bcg {
+        background-image: url(../img/Hero__Sergey/chocolate-covered-cocoa-powder1mobile@2x.jpg);
+
+    }
+}
+
+
+.hero__text {
+    margin-bottom: 32px;
+    text-align: start;
+    text-transform: lowercase;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+
+    color: var(--primary-white-color);
+}
+
+.hero__firstword {
+    text-transform: capitalize;
+}
+
+.hero__buttons {
+
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.hero__button,
+.hero__anchor {
+    margin-bottom: 23px;
+    padding: 12px 28px;
+
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    color: var(--primary-white-color);
+
+    border: 1px solid var(--primary-white-color);
+    border-radius: 100px;
+    background-color: transparent;
+
+    transition: background-color var(--transition-timing) var(--transition-function),
+        border-color var(--transition-timing) var(--transition-function);
+}
+
+.hero__button:hover,
+.hero__button:focus,
+.hero__anchor:hover,
+.hero__anchor:focus {
+    background-color: var(--contrast-color);
+    border-color: var(--contrast-color);
+
+}
+
+.hero__scroll-btn {
+    display: flex;
+    align-items: center;
+}
+
+.hero__scroll-txt {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+
+    color: var(--primary-white-color);
+}
+
+.scroll__down {
+    display: flex;
+    align-items: center;
+}
+
+
+.hero__link {
+    width: fit-content;
+
+    align-items: center;
+    display: flex;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+
+    color: var(--primary-white-color);
+
+
+}
+
+.hero__scroll-icon {
+    margin-left: 14px;
+    padding-top: 6px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: var(--primary-white-color);
+    fill: var(--contrast-color);
+}
+
+.hero__link:hover,
+.hero__link:focus {
+    color: var(--contrast-color);
+}
+
+.hero__link:hover .hero__scroll-icon,
+.hero__link:focus .hero__scroll-icon {
+    fill: var(--primary-white-color);
+    background-color: var(--contrast-color);
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {}
+
+@media screen and (min-width: 375px) {}
+
+@media screen and (min-width: 768px) {
+
+    .hero__bcg {
+        padding: 375px 40px 40px 40px;
+        max-width: 1199px;
+        max-height: 800px;
+        background-image: url(../img/Hero__Sergey/chocolate-covered-cocoa-powdertablet.jpg);
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-resolution: 1.5dppx),
+    only screen and (min-resolution: 144dpi) {
+        .hero__bcg {
+            background-image: url(../img/Hero__Sergey/chocolate-covered-cocoa-powdertablet@2x.jpg);
+
+        }
+    }
+
+    .hero__text {
+        width: 484px;
+
+        margin-bottom: 32px;
+        margin-right: 180px;
+
+
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 1.21;
+        letter-spacing: -0.03em;
+
+        color: var(--primary-white-color);
+    }
+
+    .hero__buttons {
+
+        align-items: baseline;
+        justify-content: start;
+        gap: 14px;
+    }
+
+
+    .hero__anchor {
+        padding: 14px 40px;
+        margin-right: 206px;
+        margin-bottom: 0;
+    }
+
+    .hero__button {
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .hero__bcg {
+        padding: 375px 40px 40px 40px;
+        max-width: 1199px;
+        max-height: 800px;
+        background-image: url(../img/Hero__Sergey/chocolate-covered-cocoa-powder\ 1\ desktop.jpg)
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-resolution: 1.5dppx),
+    only screen and (min-resolution: 144dpi) {
+        .hero__bcg {
+            background-image: url(../img/Hero__Sergey/chocolate-covered-cocoa-powder1desktop@2x.jpg);
+
+        }
+    }
+
+    .hero__text {
+        width: 484px;
+
+        margin-bottom: 32px;
+        margin-right: 180px;
+
+
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 1.21;
+        letter-spacing: -0.03em;
+
+        color: var(--primary-white-color);
+    }
+
+    .hero__buttons {
+        align-items: baseline;
+        justify-content: start;
+        gap: 14px;
+    }
+
+
+    .hero__anchor {
+        padding: 14px 40px;
+        margin-right: 638px;
+    }
+
+}
