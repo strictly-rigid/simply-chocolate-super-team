@@ -11,17 +11,9 @@
     overflow: hidden;
 }
 
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    padding: 0px 20px;
-}
-
-
-
 .hero__bcg {
     padding: 375px 20px 20px 20px;
+    margin-bottom: 72px;
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,7 +24,7 @@
     max-width: 375px;
     border-radius: 30px;
 
-    background-image: url(../img/Hero__Sergey/chocolate-covered-cocoa-powdermobile@1x.jpg);
+    background-image: url(../img/Hero/hero_bcg_mobile@1x.jpg);
 
 }
 
@@ -42,7 +34,7 @@ only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min-resolution: 1.5dppx),
 only screen and (min-resolution: 144dpi) {
     .hero__bcg {
-        background-image: url(../img/Hero__Sergey/chocolate-covered-cocoa-powder1mobile@2x.jpg);
+        background-image: url(../img/Hero/hero_bcg_mobile@2x.jpg);
 
     }
 }
@@ -137,13 +129,15 @@ only screen and (min-resolution: 144dpi) {
 }
 
 .hero__scroll-icon {
+
     margin-left: 14px;
     padding-top: 6px;
     width: 28px;
     height: 28px;
     border-radius: 50%;
     background-color: var(--primary-white-color);
-    fill: var(--contrast-color);
+    fill: var(--primary-white-color);
+    stroke: var(--contrast-color);
 }
 
 .hero__link:hover,
@@ -153,8 +147,10 @@ only screen and (min-resolution: 144dpi) {
 
 .hero__link:hover .hero__scroll-icon,
 .hero__link:focus .hero__scroll-icon {
-    fill: var(--primary-white-color);
+    fill: var(--contrast-color);
     background-color: var(--contrast-color);
+    stroke: var(--primary-white-color);
+    border: none;
 }
 
 @media screen and (min-width: 320px) and (max-width: 374px) {}
@@ -167,7 +163,7 @@ only screen and (min-resolution: 144dpi) {
         padding: 375px 40px 40px 40px;
         max-width: 1199px;
         max-height: 800px;
-        background-image: url(../img/Hero__Sergey/chocolate-covered-cocoa-powdertablet.jpg);
+        background-image: url(../img/Hero/hero_bcg_tab@1x.jpg);
     }
 
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -176,7 +172,7 @@ only screen and (min-resolution: 144dpi) {
     only screen and (min-resolution: 1.5dppx),
     only screen and (min-resolution: 144dpi) {
         .hero__bcg {
-            background-image: url(../img/Hero__Sergey/chocolate-covered-cocoa-powdertablet@2x.jpg);
+            background-image: url(../img/Hero/hero_bcg_tab@2x.jpg);
 
         }
     }
@@ -206,7 +202,7 @@ only screen and (min-resolution: 144dpi) {
 
     .hero__anchor {
         padding: 14px 40px;
-        margin-right: 206px;
+        margin-right: 186px;
         margin-bottom: 0;
     }
 
@@ -221,7 +217,7 @@ only screen and (min-resolution: 144dpi) {
         padding: 375px 40px 40px 40px;
         max-width: 1199px;
         max-height: 800px;
-        background-image: url(../img/Hero__Sergey/chocolate-covered-cocoa-powder\ 1\ desktop.jpg)
+        background-image: url(../img/Hero/hero_bcg_desk@1x.jpg)
     }
 
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -230,7 +226,7 @@ only screen and (min-resolution: 144dpi) {
     only screen and (min-resolution: 1.5dppx),
     only screen and (min-resolution: 144dpi) {
         .hero__bcg {
-            background-image: url(../img/Hero__Sergey/chocolate-covered-cocoa-powder1desktop@2x.jpg);
+            background-image: url(../img/Hero/hero_bcg_desk@2x.jpg);
 
         }
     }
@@ -259,7 +255,7 @@ only screen and (min-resolution: 144dpi) {
 
     .hero__anchor {
         padding: 14px 40px;
-        margin-right: 638px;
+        margin-right: 618px;
     }
 
 }
