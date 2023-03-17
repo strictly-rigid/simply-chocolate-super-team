@@ -1,0 +1,112 @@
+.subscribe {
+  padding: 62px 20px;
+  max-width: 375px;
+  background-image: url(../img/subscribe/Subcribe1x-375.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.subscribe-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscribe-header {
+  margin-bottom: 24px;
+  max-width: 290px;
+  /* margin: 0 auto; */
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.subscribe-text {
+  margin-bottom: 24px;
+  max-width: 326px;
+  /* margin: 0 auto; */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--primary-white-color);
+}
+
+.subscribe-btn {
+  padding: 12px 28px;
+  background-color: var(--contrast-color);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--primary-white-color);
+  border-radius: 100px;
+  margin: 0 auto;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .subscribe {
+    background-image: url(../img/subscribe/Subcribe2x-375.jpg); /* Картинка. 2х 🙂 */
+  }
+}
+
+/* ----------------------------- TABLET ------------------------------- */
+
+@media screen and (min-width: 768px) {
+  .subscribe {
+    padding: 72px 150px;
+    max-width: 768px;
+    background-image: url(../img/subscribe/Subcribe1x-768.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .subscribe {
+      background-image: url(../img/subscribe/Subcribe2x-768.jpg); /* Картинка. 2х 🙂 */
+    }
+  }
+
+  .subscribe-header {
+    width: 378px;
+    font-size: 24px;
+    line-height: 1.166;
+  }
+
+  .subscribe-text {
+    max-width: 467px;
+  }
+
+  .subscribe-btn {
+    padding: 14px 40px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
+/* --------------------- DESKTOP ------------------------------- */
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    padding: 72px 366px;
+    max-width: 1200px;
+    background-image: url(../img/subscribe/Subcribe1x-1200.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .subscribe {
+      background-image: url(../img/subscribe/Subcribe2x-1200.jpg); /* Картинка. 2х 🙂 */
+    }
+  }
+  
+}
