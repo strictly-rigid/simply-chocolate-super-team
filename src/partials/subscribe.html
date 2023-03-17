@@ -1,15 +1,46 @@
 <!------------------ Marina Sihida -------------------->
 <section class="subscribe">
-    <div class="subscribe-content">
-  <h2 class="subscribe-header">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
-  <p class="subscribe-text">
-    From the velvety texture to the rich and complex flavor, our New Chocolate
-    is a true indulgence that will leave you craving more. Made with only the
-    finest ingredients and handcrafted with the utmost care, each piece is a
-    work of art that is sure to please.
-  </p>
-  <button class="subscribe-btn" type="button">
-    Subscribe
-</button>
-</div>
+  <div class="subscribe-content">
+    <h2 class="subscribe-header">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
+    <p class="subscribe-text">
+      From the velvety texture to the rich and complex flavor, our New Chocolate
+      is a true indulgence that will leave you craving more. Made with only the
+      finest ingredients and handcrafted with the utmost care, each piece is a
+      work of art that is sure to please.
+    </p>
+    <button data-modal-open class="subscribe-btn" type="button">
+      Subscribe
+    </button>
+  </div>
 </section>
+
+<!--------------- MODAL ------------->
+
+<div data-modal class="backdrop is-hidden">
+  <div class="subscribe-modal">
+    <div class="subscribe-modal-picture">
+      <button data-modal-close class="subscribe-btn-close">
+        <svg class="subscribe-icon-close">
+          <use href="../img/icons.svg#close-btn"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="subscribe-form">
+    <p class="subscribe-form-title">
+        Explore our <span class="subscribe-orange-txt">new chocolate</span> first!
+    </p>
+
+    <label>
+        <input
+          class="subscribe-email"
+          type="email"
+          name="subscribe-email"
+          placeholder="Enter your email"
+        />
+      </label>
+      <button class="subscribe-submit-btn" type="submit">Submit</button>
+</div>
+  </div>
+</div>
+
+<script src="./js/subscribe-modal.js"></script>
