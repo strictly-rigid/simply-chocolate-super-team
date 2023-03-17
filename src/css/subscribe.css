@@ -86,9 +86,8 @@
   max-width: 311px;
   height: 95%;
   max-height: 350px;
-  overflow: scroll;
+  overflow: hidden;
 
-  /* padding: 72px 24px 24px; */
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -97,14 +96,16 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscribe-icon-close {
+.subscribe-btn-close {
   position: absolute;
+  stroke: var(--primary-white-color);
   display: flex;
   top: 15px;
   right: 14px;
   width: 24px;
   height: 24px;
   padding: 0;
+  
   justify-content: center;
   align-items: center;
   border-radius: 50%;
@@ -135,6 +136,7 @@
 
 .subscribe-form-title {
   margin-bottom: 24px;
+  text-align: left;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
@@ -157,14 +159,19 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.214;
-  /* display: flex;
-align-items: center; */
   letter-spacing: -0.02em;
 
   color: rgba(64, 64, 64, 0.3);
 }
 
+.email-window {
+    position: relative;
+}
+
 .subscribe-submit-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
   padding: 14px 28px;
   background: var(--contrast-color);
   border-radius: 100px;
