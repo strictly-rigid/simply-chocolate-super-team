@@ -1,0 +1,7 @@
+.modal-leave-review-header {
+  margin-bottom: 40px;
+}
+
+.modal-leave-review-header span {
+  color: var(--contrast-color);
+}
