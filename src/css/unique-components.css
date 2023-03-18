@@ -1,7 +1,6 @@
 .unique-components {
-    background-color: #E2E2E2;
+    background-color: var(--light-background-color);
     padding-top: 72px;
-    padding-bottom: 72px;
 }
 .unique-title {
     font-weight: 600;
@@ -14,7 +13,7 @@
 }
 
 .unique-title-orange {
-    color: #FD9222;
+    color: var(--contrast-color);
 }
 
 .unique-after-title {
@@ -26,24 +25,20 @@
     margin-bottom: 32px;
 }
 
-.unique-list {
-    
-}
-
 
 .unique-list-item:not(:last-child) {
     margin-bottom: 20px;}
 
 .unique-list-item:nth-child(2n + 2) {
-    background-color: #FFFFFF;
+    background-color: var(--primary-white-color);
 }
 .unique-list-item:nth-last-child(2) {
-    background-color:#1E1823;
+    background-color: var(--dark-background-color);
 }
 
 .unique-list-item {
-    background-color: #FD9222;
-    border: 1px solid #FD9222;
+    background-color: var(--contrast-color);
+    border: 1px solid var(--contrast-color);
     border-radius: 15px;
 
 }
@@ -63,16 +58,21 @@ padding-bottom: 25px;
     text-transform: uppercase;
     padding-left: 28px;
     padding-bottom: 28px;
-    color:#FFFFFF;
+    color: var(--primary-white-color);
 }
 .second-color {
-    color: #111111;;
+    color: var(--primary-text-color);
 }
+
+
+/* !!!!!!!!!!!!!!!!!!                 FLIP-CARD        !!!!!!!!!!!!!!!!!!!!! */
+
+
+/* !!!!!!!!!!!!!!!!!!!!            TABLET        !!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 @media screen and (min-width: 768px) {
     .unique-components {
         padding-top: 100px;
-        padding-bottom: 100px;
     }
 
     .unique-title {
@@ -96,6 +96,7 @@ padding-bottom: 25px;
         flex-wrap: wrap;
         gap: 32px 32px;
     }
+
 }
 
 
@@ -107,7 +108,6 @@ padding-bottom: 25px;
 @media screen and (min-width: 1200px) {
     .unique-components {
         padding-top: 128px;
-        padding-bottom: 128px;
         }
 
     .unique-list {
@@ -118,3 +118,6 @@ padding-bottom: 25px;
         gap:19px;
     }
 }
+
+
+
