@@ -12,7 +12,7 @@
 }
 
 .hero__bcg {
-    padding: 375px 20px 20px 20px;
+    padding: 375px 16px 20px 20px;
     margin-bottom: 72px;
 
     background-repeat: no-repeat;
@@ -45,9 +45,6 @@ only screen and (min-resolution: 144dpi) {
     text-align: start;
     text-transform: lowercase;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: -0.03em;
 
     color: var(--primary-white-color);
 }
@@ -64,7 +61,24 @@ only screen and (min-resolution: 144dpi) {
 
 }
 
-.hero__button,
+.hero__button {
+    margin-bottom: 23px;
+    padding: 12px 28px;
+
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    color: var(--primary-white-color);
+
+    border-radius: 100px;
+    background-color: var(--contrast-color);
+
+    transition: background-color var(--transition-timing) var(--transition-function),
+        border-color var(--transition-timing) var(--transition-function),
+        color var(--transition-timing) var(--transition-function)
+}
+
 .hero__anchor {
     margin-bottom: 23px;
     padding: 12px 28px;
@@ -75,57 +89,42 @@ only screen and (min-resolution: 144dpi) {
     line-height: 1.21;
     color: var(--primary-white-color);
 
+
     border: 1px solid var(--primary-white-color);
     border-radius: 100px;
     background-color: transparent;
 
     transition: background-color var(--transition-timing) var(--transition-function),
-        border-color var(--transition-timing) var(--transition-function);
+        border-color var(--transition-timing) var(--transition-function),
+        color var(--transition-timing) var(--transition-function)
 }
 
 .hero__button:hover,
-.hero__button:focus,
+.hero__button:focus {
+    background-color: var(--primary-hover-color);
+    color: var(--contrast-color);
+}
+
 .hero__anchor:hover,
 .hero__anchor:focus {
-    background-color: var(--contrast-color);
+    color: var(--contrast-color);
     border-color: var(--contrast-color);
+    background-color: var(--primary-white-color);
 
 }
-
-.hero__scroll-btn {
-    display: flex;
-    align-items: center;
-}
-
-.hero__scroll-txt {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.21;
-    letter-spacing: -0.03em;
-
-    color: var(--primary-white-color);
-}
-
-.scroll__down {
-    display: flex;
-    align-items: center;
-}
-
 
 .hero__link {
-    width: fit-content;
-
     align-items: center;
     display: flex;
 
     font-weight: 500;
     font-size: 12px;
     line-height: 1.21;
-    letter-spacing: -0.03em;
 
     color: var(--primary-white-color);
-
-
+    transition: background-color var(--transition-timing) var(--transition-function),
+        border-color var(--transition-timing) var(--transition-function),
+        color var(--transition-timing) var(--transition-function)
 }
 
 .hero__scroll-icon {
@@ -136,8 +135,11 @@ only screen and (min-resolution: 144dpi) {
     height: 28px;
     border-radius: 50%;
     background-color: var(--primary-white-color);
-    fill: var(--primary-white-color);
+    fill: var(--contrast-color);
     stroke: var(--contrast-color);
+    transition: background-color var(--transition-timing) var(--transition-function),
+        stroke var(--transition-timing) var(--transition-function),
+        color var(--transition-timing) var(--transition-function)
 }
 
 .hero__link:hover,
@@ -150,7 +152,7 @@ only screen and (min-resolution: 144dpi) {
     fill: var(--contrast-color);
     background-color: var(--contrast-color);
     stroke: var(--primary-white-color);
-    border: none;
+    fill: var(--primary-white-color);
 }
 
 @media screen and (min-width: 320px) and (max-width: 374px) {}
@@ -187,7 +189,6 @@ only screen and (min-resolution: 144dpi) {
         font-weight: 500;
         font-size: 28px;
         line-height: 1.21;
-        letter-spacing: -0.03em;
 
         color: var(--primary-white-color);
     }
@@ -202,12 +203,13 @@ only screen and (min-resolution: 144dpi) {
 
     .hero__anchor {
         padding: 14px 40px;
-        margin-right: 186px;
+        margin-right: 164px;
         margin-bottom: 0;
     }
 
     .hero__button {
         margin-bottom: 0;
+        padding: 14px 40px;
     }
 
 }
@@ -241,7 +243,6 @@ only screen and (min-resolution: 144dpi) {
         font-weight: 500;
         font-size: 28px;
         line-height: 1.21;
-        letter-spacing: -0.03em;
 
         color: var(--primary-white-color);
     }
@@ -255,7 +256,11 @@ only screen and (min-resolution: 144dpi) {
 
     .hero__anchor {
         padding: 14px 40px;
-        margin-right: 618px;
+        margin-right: 595px;
+    }
+
+    .hero__button {
+        padding: 14px 40px;
     }
 
 }
