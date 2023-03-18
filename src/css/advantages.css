@@ -1,4 +1,6 @@
 .section-advantages {
+  display: flex;
+  justify-content: center;
   width: 100%;
   min-height: 792px;
   padding: 20px;
@@ -96,20 +98,12 @@
     padding: 50px;
   }
 
-  .advantages-container {
-    position: relative;
-  }
-
   .advantages-list {
     gap: 70px;
   }
 
-  .advantages-par {
-  }
-
-  .advantages-item-second {
-  }
   .advantages-item {
+    position: relative;
   }
 
   .advantages-item + .advantages-item::after {
@@ -119,7 +113,8 @@
 
     display: block;
     position: absolute;
-    bottom: 95px;
+    top: 110px;
+    left: -120px;
 
     border: 1px solid rgba(255, 255, 255, 0.5);
     transform: rotate(90deg);
@@ -127,11 +122,4 @@
     order: 1;
     flex-grow: 0;
   }
-
-  /*  
- 
-
-  .advantages-item-second::after {
-   
-  }*/
 }
