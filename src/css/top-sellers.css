@@ -46,12 +46,6 @@
   margin-bottom: 72px;
 }
 
-@media screen and (max-width: 374px) {
-}
-
-@media screen and (min-width: 375px) {
-}
-
 @media screen and (min-width: 768px) {
   .top-sell-list {
     display: flex;
@@ -105,4 +99,235 @@
   .top-sell-btn-wrap {
     margin-bottom: 128px;
   }
+}
+
+/* MODAL BUY NOW */
+
+.modal-buy-now {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+
+  transform: translate(-50%, 0%) scale(1);
+
+  width: 311px;
+  border-radius: 15px;
+  padding: 32px 24px;
+
+  background-color: var(--secondary-white-color);
+}
+
+.modal-buy-now-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  background-color: transparent;
+}
+
+.modal-buy-now-close-icon {
+  stroke: black;
+}
+
+.modal-buy-now-title span {
+  color: var(--contrast-color);
+}
+
+.modal-buy-now-title {
+  margin-bottom: 32px;
+}
+
+.modal-buy-now-list {
+  display: flex;
+  margin-bottom: 59px;
+}
+
+.modal-buy-now-list-item {
+  width: 231px;
+  height: 257px;
+  padding: 32px 32px 28px 32px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: var(--primary-white-color);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+}
+
+.modal-buy-now-list-item img {
+  width: 167px;
+  height: 148px;
+}
+
+.modal-buy-now-list-item:not(:first-child) {
+  display: none;
+}
+
+.modal-buy-now-list-item-desc {
+  padding: 8px 27px;
+  width: 96px;
+  margin-top: 16px;
+
+  background: var(--secondary-white-color);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+}
+
+.modal-buy-now-form-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  color: #000000;
+}
+
+.modal-buy-now-form-label p {
+  margin-bottom: 8px;
+}
+
+.modal-buy-now-form-label input,
+textarea {
+  height: 45px;
+  width: 100%;
+
+  background-color: transparent;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #000000;
+  padding: 14px 18px;
+}
+
+.modal-buy-now-form-label input::placeholder,
+textarea::placeholder {
+  font-weight: 400;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.modal-buy-now-form-label:first-child input:nth-child(3) {
+  margin-top: 14px;
+}
+
+.modal-buy-now-form-label input[type='tel'] {
+  padding-left: 106px;
+}
+
+.modal-buy-now-input-wrap {
+  position: relative;
+}
+
+.modal-buy-now-input-wrap svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal-buy-now-input-wrap .svg-ua {
+  left: 18px;
+}
+
+.ua-code {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #000000;
+  padding: 14px 18px;
+}
+
+.ua-code::after {
+  content: '';
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  margin-left: 8px;
+
+  display: inline-block;
+  width: 1.5px;
+  height: 25px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.modal-buy-now-input-wrap .svg-mastercard {
+  right: 14px;
+}
+
+.modal-buy-now-form-label textarea {
+  height: 91px;
+  resize: none;
+}
+
+.modal-buy-now-form-submit {
+  border-radius: 100px;
+  padding: 12px 28px;
+  background-color: var(--contrast-color);
+  color: var(--primary-white-color);
+
+  font-weight: 600;
+  line-height: 1.21;
+
+  margin-top: 18px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-buy-now {
+    width: 609px;
+    padding: 48px;
+  }
+
+  .modal-buy-now-list {
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .modal-buy-now-list-item {
+    width: 160px;
+    height: 196px;
+    padding: 24px 20px 18px 20px;
+    margin: none;
+  }
+
+  .modal-buy-now-list-item:not(:first-child) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal-buy-now-list-item img {
+    width: 120px;
+    height: 111px;
+  }
+
+  .modal-buy-now-list-item-desc {
+    margin-top: 14px;
+  }
+
+  .modal-buy-now-input-name-wrap {
+    display: flex;
+    gap: 21px;
+  }
+
+  .modal-buy-now-form-submit {
+    padding: 14px 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
 }
