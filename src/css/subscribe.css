@@ -1,6 +1,5 @@
 .subscribe {
   padding: 62px 20px;
-  max-width: 375px;
   background-image: url(../img/subscribe/Subcribe1x-375.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -46,6 +45,15 @@
   color: var(--primary-white-color);
   border-radius: 100px;
   margin: 0 auto;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: var(--primary-hover-color);
+  color: var(--contrast-color);
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -81,7 +89,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-
+    z-index: 2;
   width: 95%;
   max-width: 311px;
   height: 95%;
@@ -102,21 +110,29 @@
   display: flex;
   top: 15px;
   right: 14px;
-  width: 24px;
-  height: 24px;
   padding: 0;
-  
+
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   background-color: transparent;
-  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn-close:hover,
+.subscribe-btn-close:focus {
+  stroke: var(--contrast-color);
+}
+
+.subscribe-btn-close-icon {
+  width: 24px;
+  height: 24px;
 }
 
 .subscribe-modal-picture {
   width: 311px;
   height: 169px;
+  /* z-index: 1; */
   background-image: url(../img/subscribe/subscribe-modal-1x-311.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -165,21 +181,31 @@
 }
 
 .email-window {
-    position: relative;
+  position: relative;
 }
 
 .subscribe-submit-btn {
   position: absolute;
-  top: 0;
+  top: 50%;
   right: 0;
+  transform: translateY(-50%); /* margin: 0; */
   padding: 14px 28px;
   background: var(--contrast-color);
   border-radius: 100px;
   font-weight: 600;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 1.21;
   text-align: center;
   color: var(--primary-white-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-submit-btn:hover,
+.subscribe-submit-btn:focus {
+  background-color: var(--primary-hover-color);
+  color: var(--contrast-color);
 }
 
 /* ----------------------------- TABLET ------------------------------- */
@@ -187,7 +213,7 @@
 @media screen and (min-width: 768px) {
   .subscribe {
     padding: 72px 150px;
-    max-width: 768px;
+    min-width: 768px;
     background-image: url(../img/subscribe/Subcribe1x-768.jpg);
   }
 
@@ -215,6 +241,60 @@
     font-size: 18px;
     line-height: 1.22;
   }
+
+  .subscribe-modal {
+    max-width: 538px;
+    max-height: 412px;
+  }
+
+  .subscribe-btn-close {
+    top: 24px;
+    right: 24px;
+  }
+
+  .subscribe-btn-close-icon {
+    width: 28px;
+    height: 28px;
+
+  }
+
+  .subscribe-modal-picture {
+    width: 538px;
+    height: 196px;
+    background-image: url(../img/subscribe/subscribe-modal-1x-538.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .subscribe-modal-picture {
+      background-image: url(../img/subscribe/subscribe-modal-2x-538.jpg);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+  }
+
+  .subscribe-form {
+    max-height: 216px;
+    padding: 40px;
+  }
+
+  .subscribe-form-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.1667;
+    margin-bottom: 28px;
+  }
+
+  .subscribe-email {
+    width: 313px;
+    padding: 14px 24px;
+    font-size: 18px;
+    line-height: 1.222;
+  }
+
+  .subscribe-submit-btn {
+    padding: 16px 42px;
+  }
 }
 
 /* --------------------- DESKTOP ------------------------------- */
@@ -222,7 +302,7 @@
 @media screen and (min-width: 1200px) {
   .subscribe {
     padding: 72px 366px;
-    max-width: 1200px;
+    min-width: 1200px;
     background-image: url(../img/subscribe/Subcribe1x-1200.jpg);
   }
 
