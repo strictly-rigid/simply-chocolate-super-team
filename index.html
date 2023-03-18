@@ -17,7 +17,7 @@
     />
     
     <script type="module" crossorigin src="/simply-chocolate-super-team/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/simply-chocolate-super-team/assets/index-389f483d.css">
+    <link rel="stylesheet" href="/simply-chocolate-super-team/assets/index-564d07d4.css">
   </head>
   <body>
     <!-- <p>Hello World</p> -->
@@ -250,44 +250,63 @@
             exceptional taste sensation.</p>
         <ul class="unique-list list">
             <li class="unique-list-item">
-                <img class="unique-list-img" 
-                srcset="../img/unique-components/chocolate-mobile@2x.png 2x" 
-                src="../img/unique-components/chocolate-mobile.png"
-                    alt="chocolate" width="224">
-        
+                <picture>
+                    <source
+                        srcset="../img/unique-components/chocolate-desktop.png 1x, ../img/unique-components/chocolate-desktop2x.png 2x"
+                        media="(min-width: 1200px)" />
+                    <source
+                        srcset="../img/unique-components/chocolate-mobile.png 1x, ../img/unique-components/chocolate-mobile2x.png 2x"
+                        media="(min-width: 320px)" />
+                            
+                    <img class="unique-list-img" src="../img/unique-components/chocolate-mobile.png" alt="chocolate" width="224">
+                </picture>
                 <p class="unique-after-wraper">MILK CHOKOLATE</p>
+
             </li>
         
         
             <li class="unique-list-item">
-        
-                <img class="unique-list-img" 
-                srcset="../img/unique-components/milk-mobile@2x.png 2x" 
-                src="../img/unique-components/milk-mobile.png" alt="milk" width="224">
-        
-        
+                <picture>
+                    <source srcset="../img/unique-components/milk-desktop.png 1x, ../img/unique-components/milk-desktop2x.png 2x"
+                        media="(min-width: 1200px)" />
+                    <source srcset="../img/unique-components/milk-mobile.png 1x, ../img/unique-components/milk-mobile2x.png 2x"
+                        media="(min-width: 320px)" />
+
+                    <img class="unique-list-img" 
+                    src="../img/unique-components/milk-mobile.png" 
+                    alt="milk" width="224">
+                </picture>
                 <p class="unique-after-wraper second-color">MILK</p>
             </li>
         
         
             <li class="unique-list-item">
-        
-                <img class="unique-list-img" 
-                srcset="../img/unique-components/nuts-mobile@2x.png 2x" 
-                src="../img/unique-components/nuts-mobile.png" alt="nuts"
-                    width="224">
-        
-        
+                <picture>
+                    <source srcset="../img/unique-components/nuts-desktop.png 1x, ../img/unique-components/nuts-desktop2x.png 2x"
+                        media="(min-width: 1200px)" />
+                    <source srcset="../img/unique-components/nuts-mobile.png 1x, ../img/unique-components/nuts-mobile2x.png 2x"
+                        media="(min-width: 320px)" />
+
+                    <img class="unique-list-img" srcset="../img/unique-components/nuts-mobile2x.png 2x"
+                    src="../img/unique-components/nuts-mobile.png" 
+                    alt="nuts" width="224">
+
+                </picture>
                 <p class="unique-after-wraper">NUTS</p>
             </li>
         
         
             <li class="unique-list-item">
-                <img class="unique-list-img" 
-                srcset="../img/unique-components/coffe-mobile@2x.png 2x" 
-                src="../img/unique-components/coffe-mobile.png" alt="coffee"
-                    width="224">
-        
+                <picture>
+                    <source srcset="../img/unique-components/coffe-desktop.png 1x, ../img/unique-components/coffe-desktop2x.png 2x"
+                        media="(min-width: 1200px)" />
+                    <source srcset="../img/unique-components/coffe-mobile.png 1x, ../img/unique-components/coffe-mobile2x.png 2x"
+                        media="(min-width: 320px)" />
+
+                    <img class="unique-list-img" srcset="../img/unique-components/coffe-mobile2x.png 2x"
+                    src="../img/unique-components/coffe-mobile.png" 
+                    alt="coffee" width="224">
+                </picture>
                 <p class="unique-after-wraper second-color">SEMI-SWEET CHOCOLATE</p>
             </li>
         </ul>
@@ -297,14 +316,6 @@
 
 
 
-
-
-
-
-
-</body>
-
-</html>
     <section class="h-i-m-section">
   <div class="container">
     <h2 class="h-i-m-title">HOW IT’S<span> MADE?</span></h2>
