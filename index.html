@@ -17,7 +17,7 @@
     />
     
     <script type="module" crossorigin src="/simply-chocolate-super-team/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/simply-chocolate-super-team/assets/index-919f48b8.css">
+    <link rel="stylesheet" href="/simply-chocolate-super-team/assets/index-40577725.css">
   </head>
   <body>
     <!-- <p>Hello World</p> -->
@@ -743,9 +743,9 @@
     </button>
   </div>
 
-<!--------------- MODAL Subscribe ------------->
+  <!--------------- MODAL Subscribe ------------->
 
-<div data-modal class="backdrop is-hidden">
+  <div data-modal class="backdrop is-hidden">
     <div class="subscribe-modal">
       <div class="subscribe-modal-picture">
         <button data-modal-close class="subscribe-btn-close">
@@ -755,31 +755,32 @@
         </button>
       </div>
       <div class="subscribe-form">
-      <h2 class="subscribe-form-title">
-          Explore our <br>
+        <h2 class="subscribe-form-title">
+          Explore our <br />
           <span class="subscribe-orange-txt">new chocolate</span> first!
-      </h2>
-  
-  
-  <div class="email-window">
-      <label>
-          <input
-            class="subscribe-email"
-            type="email"
-            name="subscribe-email"
-            placeholder="Enter your email"
-          />
-        </label>
-        <button data-modal-close-submit class="subscribe-submit-btn" type="submit">Submit</button>
+        </h2>
+
+        <div class="email-window">
+          <label>
+            <input
+              class="subscribe-email"
+              type="email"
+              name="subscribe-email"
+              placeholder="Enter your email"
+            />
+          </label>
+          <button
+            data-modal-close-submit
+            class="subscribe-submit-btn"
+            type="submit"
+          >
+            Submit
+          </button>
+        </div>
       </div>
-  
-  </div>
-  
     </div>
   </div>
 </section>
-
-
 
 <script src="./js/subscribe-modal.js"></script>
 
@@ -888,73 +889,64 @@
 <!-- /====POPUP REVIEW THANK YOU====== -->
 
     <form class="modal-leave-review">
-  <button class="modal-leave-review-close">
-    <svg width="24" height="24">
-      <use
-        class="modal-leave-review-close-icon"
-        href="/simply-chocolate-super-team/assets/icons-83087ff5.svg#simple-close-btn"
-      ></use>
-    </svg>
-  </button>
-  <h2 class="modal-leave-review-header">
-    LEAVE A REVIEW ABOUT <span>OUR CHOCOLATE</span>
-  </h2>
-  <label class="modal-leave-review-field">
-    <span class="modal-form-input-descr">Name</span>
-    <span class="modal-name">
-      <input
-        type="text"
-        name="user_name"
-        class="modal-form-input"
-        required
-        pattern="[a-zA-Zа-яА-Я]+"
-        minlength="3"
-      />
-      <svg class="modal-name-icon" width="18" height="18">
-        <use href="./images/icons.svg#modal-name-icon"></use>
+  <div class="modal-leave-review-container">
+    <button class="modal-leave-review-close">
+      <svg width="24" height="24">
+        <use
+          class="modal-leave-review-close-icon"
+          href="/simply-chocolate-super-team/assets/icons-83087ff5.svg#simple-close-btn"
+        ></use>
       </svg>
-    </span>
-  </label>
+    </button>
+    <h2 class="modal-leave-review-header">
+      LEAVE A REVIEW ABOUT <span>OUR CHOCOLATE</span>
+    </h2>
+    <label class="modal-leave-review-field">
+      <span class="modal-name">
+        <input
+          type="text"
+          name="user_name"
+          class="modal-leave-review-input"
+          placeholder="Name"
+          pattern="[a-zA-Zа-яА-Я]+"
+          minlength="3"
+        />
+      </span>
+    </label>
 
-  <label class="modal-leave-review-field"
-    ><span class="modal-form-input-descr">Email</span>
-    <span class="modal-email">
-      <input type="email" name="user_email" class="modal-form-input" required />
-      <svg class="modal-email-icon" width="18" height="24">
-        <use href="./images/icons.svg#modal-email-icon"></use>
-      </svg>
-    </span>
-  </label>
-  <label class="modal-leave-review-field"
-    ><span class="modal-form-input-descr">Phone</span>
-    <span class="modal-phone">
-      <input type="tel" name="user_phone" class="modal-form-input" required />
-      <svg class="modal-phone-icon" width="18" height="24">
-        <use href="./images/icons.svg#modal-phone-icon"></use>
-      </svg>
-    </span>
-  </label>
-  <label class="modal-leave-review-field modal-leave-review-comment"
-    ><span class="modal-form-input-descr">Comment</span>
-    <textarea
-      name="user_message"
-      class="modal-form-message"
-      placeholder="Text input"
-    ></textarea>
-  </label>
+    <label class="modal-leave-review-field">
+      <span class="modal-email">
+        <input
+          type="email"
+          name="user_email"
+          class="modal-leave-review-input"
+          placeholder="Email"
+        />
+      </span>
+    </label>
+    <label class="modal-leave-review-field">
+      <span class="modal-phone">
+        <input
+          type="tel"
+          name="user_phone"
+          class="modal-leave-review-input"
+          placeholder="Phone number"
+        />
+        <svg class="modal-phone-icon" width="18" height="24">
+          <use href="./images/icons.svg#modal-phone-icon"></use>
+        </svg>
+      </span>
+    </label>
+    <label class="modal-leave-review-field modal-leave-review-comment">
+      <textarea
+        name="user_message"
+        class="modal-leave-review-input modal-leave-review-message"
+        placeholder="Enter text"
+      ></textarea>
+    </label>
 
-  <input
-    type="checkbox"
-    id="user-policy"
-    name="user-policy"
-    class="modal-form-checkbox hidden-heading"
-  />
-  <label for="user-policy" class="modal-form-checkbox-descr"
-    >I accept the terms and conditions of the&nbsp;
-    <a href="#" class="privacy-policy-text">Privacy Policy</a>
-  </label>
-
-  <button type="submit" class="modal-submit-btn">Send</button>
+    <button type="submit" class="modal-leave-review-btn">Send</button>
+  </div>
 </form>
 
 
