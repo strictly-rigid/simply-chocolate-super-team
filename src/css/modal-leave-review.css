@@ -1,7 +1,63 @@
+.modal-leave-review-container {
+  max-width: 317px;
+  max-height: 471px;
+}
+
 .modal-leave-review-header {
   margin-bottom: 40px;
 }
 
 .modal-leave-review-header span {
   color: var(--contrast-color);
+}
+
+.modal-leave-review-input {
+  width: 263px;
+  height: 45px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+}
+
+.modal-leave-review-input {
+  margin-bottom: 14px;
+}
+
+.modal-leave-review-comment {
+  margin-bottom: 18px;
+}
+
+.modal-leave-review-field input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.modal-leave-review-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  min-width: 93px;
+  padding: 12px 28px;
+  color: var(--primary-white-color);
+  background-color: var(--contrast-color);
+  border-radius: 100px;
+}
+
+/* ----------- TABLET ----------- */
+@media screen and (min-width: 768px) {
+  .modal-leave-review-container {
+    max-width: 517px;
+    max-height: 631px;
+  }
+
+  .modal-leave-review-btn {
+    min-width: 117px;
+    padding: 14px 40px;
+  }
 }
