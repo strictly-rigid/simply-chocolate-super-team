@@ -1,4 +1,5 @@
 .modal-leave-review-container {
+  position: relative;
   max-width: 317px;
   max-height: 471px;
   background-color: #ffffff;
@@ -8,6 +9,17 @@
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 32px;
+}
+
+.modal-leave-review-close-icon {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  stroke: black;
+
+  /* background-color: transparent; */
+
+  transition: stroke var(--transition-timing) var(--transition-function);
 }
 
 .modal-leave-review-header {
