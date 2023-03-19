@@ -1,3 +1,7 @@
+.top-sell {
+  margin-bottom: 72px;
+}
+
 .top-sell-title {
   padding-bottom: 32px;
 }
@@ -38,15 +42,27 @@
 
   margin-top: 20px;
   text-align: center;
+
+  transition: color var(--transition-timing) var(--transition-function),
+    backgroundcolor var(--transition-timing) var(--transition-function);
+}
+
+.top-sell-btn:hover,
+.modal-buy-now-form-submit:hover {
+  background-color: var(--primary-hover-color);
+  color: var(--contrast-color);
 }
 
 .top-sell-btn-wrap {
   display: flex;
   justify-content: center;
-  margin-bottom: 72px;
 }
 
 @media screen and (min-width: 768px) {
+  .top-sell {
+    margin-bottom: 100px;
+  }
+
   .top-sell-list {
     display: flex;
     flex-direction: row;
@@ -72,18 +88,22 @@
   .top-sell-btn-wrap {
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 100px;
   }
 
   .top-sell-btn {
-    max-height: 45px;
+    max-height: 50px;
     padding: 14px 40px;
+    font-size: 18px;
+    line-height: 1.22;
 
     margin: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .top-sell {
+    margin-bottom: 128px;
+  }
   .top-sell-list-item img:last-child {
     display: block;
   }
@@ -94,10 +114,6 @@
 
   .top-sell-text {
     width: 407px;
-  }
-
-  .top-sell-btn-wrap {
-    margin-bottom: 128px;
   }
 }
 
@@ -122,11 +138,17 @@
   top: 14px;
   right: 14px;
 
+  stroke: black;
+
   background-color: transparent;
+
+  transition: stroke var(--transition-timing) var(--transition-function);
 }
 
-.modal-buy-now-close-icon {
-  stroke: black;
+.modal-buy-now-close:hover {
+  /* STROKE DOESN'T WORK WITH GRADIENT. WHY? */
+  /* stroke: linear-gradient(#f16529, #d44528); */
+  stroke: var(--contrast-color);
 }
 
 .modal-buy-now-title span {
@@ -284,6 +306,9 @@ textarea::placeholder {
 
   margin-top: 18px;
   text-align: center;
+
+  transition: color var(--transition-timing) var(--transition-function),
+    backgroundcolor var(--transition-timing) var(--transition-function);
 }
 
 @media screen and (min-width: 768px) {
