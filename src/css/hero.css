@@ -128,7 +128,6 @@ only screen and (min-resolution: 144dpi) {
 }
 
 .hero__scroll-icon {
-
     margin-left: 14px;
     padding-top: 6px;
     width: 28px;
@@ -139,7 +138,8 @@ only screen and (min-resolution: 144dpi) {
     stroke: var(--contrast-color);
     transition: background-color var(--transition-timing) var(--transition-function),
         stroke var(--transition-timing) var(--transition-function),
-        color var(--transition-timing) var(--transition-function)
+        color var(--transition-timing) var(--transition-function),
+        fill var(--transition-timing) var(--transition-function)
 }
 
 .hero__link:hover,
@@ -155,16 +155,15 @@ only screen and (min-resolution: 144dpi) {
     fill: var(--primary-white-color);
 }
 
-@media screen and (min-width: 320px) and (max-width: 374px) {}
+@media screen and (min-width: 320px) and (max-width: 374.99px) {}
 
 @media screen and (min-width: 375px) {}
 
 @media screen and (min-width: 768px) {
 
     .hero__bcg {
-        padding: 375px 40px 40px 40px;
+        padding: 670px 40px 40px 40px;
         max-width: 1199px;
-        max-height: 800px;
         background-image: url(../img/Hero/hero_bcg_tab@1x.jpg);
     }
 
@@ -203,7 +202,6 @@ only screen and (min-resolution: 144dpi) {
 
     .hero__anchor {
         padding: 14px 40px;
-        margin-right: 164px;
         margin-bottom: 0;
     }
 
@@ -212,14 +210,19 @@ only screen and (min-resolution: 144dpi) {
         padding: 14px 40px;
     }
 
+    .hero__link {
+        margin-left: auto;
+    }
 }
+
+
 
 @media screen and (min-width: 1200px) {
     .hero__bcg {
-        padding: 375px 40px 40px 40px;
+        padding: 381px 40px 40px 40px;
         max-width: 1199px;
         max-height: 800px;
-        background-image: url(../img/Hero/hero_bcg_desk@1x.jpg)
+        background-image: url(../img/Hero/hero_bcg_desk@1x.jpg);
     }
 
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -256,11 +259,15 @@ only screen and (min-resolution: 144dpi) {
 
     .hero__anchor {
         padding: 14px 40px;
-        margin-right: 595px;
+
     }
 
     .hero__button {
         padding: 14px 40px;
+    }
+
+    .hero__link {
+        margin-left: auto;
     }
 
 }
