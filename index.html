@@ -22,120 +22,155 @@
   <body>
     <!-- <p>Hello World</p> -->
     <header class="page-header">
-    <div class="page-header-container container">
-            <nav class="header-page-nav">
-            <a class="header-logo link" href="../index.html">
-              <span class="header-span-simply">Simply</span>
-              <span class="header-span-chocolate">Chocolate</span>
-              <svg class="header-logo-icon" width="21" height="21">
-                <use href="../img/icons.svg#chocolate-logo"></use>
+  <div class="page-header-container container">
+    <nav class="header-page-nav">
+      <a class="header-logo link" href="../index.html">
+        <span class="header-span-simply">Simply</span>
+        <span class="header-span-chocolate">Chocolate</span>
+        <svg class="header-logo-icon" width="21" height="21">
+          <use href="../img/icons.svg#chocolate-logo"></use>
+        </svg>
+      </a>
+      <ul class="menu list header-menu-nav">
+        <li class="header-menu-item">
+          <a
+            class="header-menu-link header-menu-link-active link current"
+            href="../index.html"
+            >Home</a
+          >
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link link" href="#how-its-made-section"
+            >How it&#8217;s made?</a
+          >
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link link" href="#our-products-section"
+            >Our products</a
+          >
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link link" href="#top-sellers-section"
+            >Top sellers</a
+          >
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link link" href="#chocolate-is-loved-section"
+            >Chocolate is loved</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <ul class="header-social-list list">
+      <li class="header-social-item">
+        <a
+          href="https://www.instagram.com/"
+          class="header-social-list-link header-dark"
+        >
+          <svg class="header-social-link-icon" width="24" height="24">
+            <use href="../img/icons.svg#insta"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-social-item">
+        <a
+          href="https://twitter.com/"
+          class="header-social-list-link header-dark"
+        >
+          <svg class="header-social-link-icon" width="24" height="24">
+            <use href="../img/icons.svg#twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <button type="button" class="header-mobile-menu-open" data-menu-open>
+      <svg class="header-mobile-menu-open-icon" width="28" height="28">
+        <use href="../img/icons.svg#burger-menu"></use>
+      </svg>
+    </button>
+  </div>
+  <!-- Mobile Menu -->
+
+  <div class="header-mobile-menu" data-menu>
+    <div class="container header-mobile-menu-cont">
+      <button type="button" class="header-mobile-menu-close" data-menu-close>
+        <svg class="header-mobile-menu-close-icon" width="28" height="28">
+          <use href="../img/icons.svg#simple-close-btn"></use>
+        </svg>
+      </button>
+
+      <ul class="menu list mob-header-menu-nav">
+        <li class="mob-header-menu-item">
+          <a
+            class="mob-header-menu-link mob-header-menu-link-active link current"
+            href="../index.html"
+            >Home</a
+          >
+        </li>
+        <li class="mob-header-menu-item">
+          <a
+            class="mob-header-menu-link mob-header-menu-link-active link"
+            href="#made"
+            >How it&#8217;s made?</a
+          >
+        </li>
+        <li class="mob-header-menu-item">
+          <a
+            class="mob-header-menu-link mob-header-menu-link-active link"
+            href="#products"
+            >Our products</a
+          >
+        </li>
+        <li class="mob-header-menu-item">
+          <a
+            class="mob-header-menu-link mob-header-menu-link-active link"
+            href="#sellers"
+            >Top sellers</a
+          >
+        </li>
+        <li class="mob-header-menu-item">
+          <a
+            class="mob-header-menu-link mob-header-menu-link-active link"
+            href="#love"
+            >Chocolate is loved</a
+          >
+        </li>
+      </ul>
+
+      <div class="mob-header-mob-cont-second">
+        <ul class="mob-header-social-list list">
+          <li class="mob-header-social-item">
+            <a
+              href="https://www.instagram.com/"
+              class="mob-header-social-list-link"
+            >
+              <svg
+                class="mob-header-social-link-icon header-light"
+                width="20"
+                height="20"
+              >
+                <use href="../img/icons.svg#insta"></use>
               </svg>
             </a>
-            <ul class="menu list header-menu-nav">
-              <li class="header-menu-item">
-                <a
-                  class="header-menu-link header-menu-link-active link current"
-                  href="../index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="header-menu-item">
-                <a class="header-menu-link link" href="#how-it's-made">How it&#8217;s made?</a>
-              </li>
-              <li class="header-menu-item">
-                <a class="header-menu-link link" href="#our-products">Our products</a>
-            
-              </li>
-              <li class="header-menu-item">
-                <a class="header-menu-link link" href="#top-sellers">Top sellers</a>
-              </li>
-              <li class="header-menu-item">
-                <a class="header-menu-link link" href="#chocolate-is-loved">Chocolate is loved</a>
-              </li>
-            </ul>
-          </nav>
-          <ul class="header-social-list list">
-            <li class="header-social-item ">
-                <a href="https://www.instagram.com/" class="header-social-list-link header-dark">
-                    <svg class="header-social-link-icon" width="24" height="24">
-                      <use href="../img/icons.svg#insta"></use>
-                    </svg>
-                  </a>
-            </li>
-            <li class="header-social-item">
-                <a href="https://twitter.com/" class="header-social-list-link header-dark">
-                    <svg class="header-social-link-icon" width="24" height="24">
-                      <use href="../img/icons.svg#twitter"></use>
-                    </svg>
-                  </a>
-            </li>
-            
-          </ul>
-          <button type="button" class="header-mobile-menu-open" data-menu-open>
-            <svg class="header-mobile-menu-open-icon" width="28" height="28">
-              <use href="../img/icons.svg#burger-menu"></use>
-            </svg>
-          </button>
+          </li>
+          <li class="mob-header-social-item">
+            <a href="https://twitter.com/" class="mob-header-social-list-link">
+              <svg
+                class="mob-header-social-link-icon header-light"
+                width="20"
+                height="20"
+              >
+                <use href="../img/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <!-- Mobile Menu -->
-    
-    <div class="header-mobile-menu" data-menu>
-        <div class="container header-mobile-menu-cont">
-    
-            <button type="button" class="header-mobile-menu-close" data-menu-close>
-                <svg class="header-mobile-menu-close-icon" width="28" height="28">
-                  <use href="../img/icons.svg#simple-close-btn"></use>
-                </svg>
-              </button>
-    
-              <ul class="menu list mob-header-menu-nav">
-                <li class="mob-header-menu-item">
-                  <a
-                    class="mob-header-menu-link mob-header-menu-link-active link current"
-                    href="../index.html"
-                    >Home</a
-                  >
-                </li>
-                <li class="mob-header-menu-item">
-                  <a class="mob-header-menu-link mob-header-menu-link-active link" href="#made">How it&#8217;s made?</a>
-                </li>
-                <li class="mob-header-menu-item">
-                  <a class="mob-header-menu-link mob-header-menu-link-active link" href="#products">Our products</a>
-              
-                </li>
-                <li class="mob-header-menu-item">
-                  <a class="mob-header-menu-link mob-header-menu-link-active link" href="#sellers">Top sellers</a>
-                </li>
-                <li class="mob-header-menu-item">
-                  <a class="mob-header-menu-link mob-header-menu-link-active link" href="#love">Chocolate is loved</a>
-                </li>
-              </ul>
-    
-              <div class="mob-header-mob-cont-second">
-                <ul class="mob-header-social-list list">
-                    <li class="mob-header-social-item ">
-                        <a href="https://www.instagram.com/" class="mob-header-social-list-link">
-                            <svg class="mob-header-social-link-icon header-light" width="20" height="20">
-                              <use href="../img/icons.svg#insta"></use>
-                            </svg>
-                          </a>
-                    </li>
-                    <li class="mob-header-social-item">
-                        <a href="https://twitter.com/" class="mob-header-social-list-link">
-                            <svg class="mob-header-social-link-icon header-light" width="20" height="20">
-                              <use href="../img/icons.svg#twitter"></use>
-                            </svg>
-                          </a>
-                    </li>
-                                  </ul>
-    </div>
-    </div>
-    </div>
-    
-    <script src="../js/burger-menu.js"></script>
-    
-        </header>
-    
+  </div>
+
+  <script src="../js/burger-menu.js"></script>
+</header>
 
     <!DOCTYPE html>
 <html lang="en">
@@ -315,7 +350,7 @@
 
 
 
-    <section class="h-i-m-section">
+    <section id="how-its-made-section" class="h-i-m-section">
   <div class="h-i-m-container">
     <h2 class="h-i-m-title">HOW IT’S<span> MADE?</span></h2>
     <div class="h-i-m-content">
@@ -356,7 +391,7 @@
   </div>
 </section>
 
-    <section class="product">
+    <section id="our-products-section" class="product">
   <div class="product-container">
     <h2 class="product-title">
       Our <span class="product-title-text">pRODUCTS</span>
@@ -496,7 +531,7 @@
   </div>
 </section>
 
-    <section class="top-sell" id="top-sellers">
+    <section class="top-sell" id="top-sellers-section">
   <div class="container">
     <h2 class="top-sell-title"><span>TOP</span> SELLERS</h2>
     <ul class="top-sell-list">
@@ -709,102 +744,112 @@
   </form>
 </div> -->
 
-     <section id="chocolate-is-loved" class="reviews">
-      <div class="container">
-        <h2 class="reviews-title">
-          <span class="reviews-title-word">chocolate</span> is loved
-        </h2>
-        <div class="swiper">
-          <ul class="swiper-wrapper">
-            <li class="swiper-slide"> <img
-                srcset="/simply-chocolate-super-team/assets/reviews-img1-min-bae55cef.png 1x, /simply-chocolate-super-team/assets/reviews-img1@2x-min-d938ea39.png 2x"
-                class="reviews-img"
-                src="/simply-chocolate-super-team/assets/reviews-img1-min-bae55cef.png"
-                alt="people"
-                width="80"
-                loading="lazy"
-              />
-              <h3 class="reviews-name">Victoria Dobrzhanska</h3>
-              <p class="reviews-text">
-                I love this chocolate bar. Perfect combination of light crispy
-                wafer, covered in a thin layer chocolate.
-              </p></li>
-            <li class="swiper-slide"><img
-                srcset="/simply-chocolate-super-team/assets/reviews-img2-min-214e91e2.png 1x, /simply-chocolate-super-team/assets/reviews-img2@2x-min-1e26864d.png 2x"
-                class="reviews-img"
-                src="/simply-chocolate-super-team/assets/reviews-img2-min-214e91e2.png"
-                alt="people"
-                width="80"
-                loading="lazy"
-              />
-              <h3 class="reviews-name">Nazar Babenko</h3>
-              <p class="reviews-text">
-                This chocolate confection is a delight! A delight! The wafer is
-                light and crisp, the hazelnut cream is smooth, and the chocolate
-                is good.
-              </p></li>
-            <li class="swiper-slide"><img
-                srcset="/simply-chocolate-super-team/assets/reviews-img3-min-be7c7b0e.png 1x, /simply-chocolate-super-team/assets/reviews-img3@2x-min-2c99bf5b.png 2x"
-                class="reviews-img"
-                src="/simply-chocolate-super-team/assets/reviews-img3-min-be7c7b0e.png"
-                alt="people"
-                width="80"
-                loading="lazy"
-              />
-              <h3 class="reviews-name">Olena Kampusch</h3>
-              <p class="reviews-text">
-                Chocolate is a family favourite treat. Love the delicious smooth
-                chocolate and the creaminess inside. The wafer is soft but
-                crunchy.
-              </p></li>
-            <li class="swiper-slide"><img
-                srcset="/simply-chocolate-super-team/assets/reviews-img4-min-ae3f7016.png 1x, /simply-chocolate-super-team/assets/reviews-img4@2x-min-85c45438.png 2x"
-                class="reviews-img"
-                src="/simply-chocolate-super-team/assets/reviews-img4-min-ae3f7016.png"
-                alt="people"
-                width="80"
-                loading="lazy"
-              />
-              <h3 class="reviews-name">Natalia Sus</h3>
-              <p class="reviews-text">
-                The chocolate assortment was delicious. Both dark and milk
-                chocolate pieces were smooth and just right on the sweetness
-                level.
-              </p></li>
-            <li class="swiper-slide"><img
-                srcset="/simply-chocolate-super-team/assets/reviews-img5-min-b11d649c.png 1x, /simply-chocolate-super-team/assets/reviews-img5@2x-min-1fcd5e61.png 2x"
-                class="reviews-img"
-                src="/simply-chocolate-super-team/assets/reviews-img5-min-b11d649c.png"
-                alt="people"
-                width="80"
-                loading="lazy"
-              />
-              <h3 class="reviews-name">Danilo Nottingham</h3>
-              <p class="reviews-text">
-                This is delicious. It so rich and flavorful you don’t need to
-                use as many. I love topping an apple with almond butter and
-                these chips for a snack.
-              </p></li>
-            <li class="swiper-slide"> <img
-                srcset="/simply-chocolate-super-team/assets/reviews-img6-min-464e6ac3.png 1x, /simply-chocolate-super-team/assets/reviews-img6@2x-min-58da3d61.png 2x"
-                class="reviews-img"
-                src="/simply-chocolate-super-team/assets/reviews-img6-min-464e6ac3.png"
-                alt="people"
-                width="80"
-                loading="lazy"
-              />
-              <h3 class="reviews-name">Irina Tydnyuk</h3>
-              <p class="reviews-text">
-                This is simply the best chocolate around, and I'm just thrilled
-                to support a local company! Best local chocolate - world class
-                :&#41;
-              </p></li>
-          </ul>
-          <div class="swiper-pagination"></div>
-        </div>
-        <button type="button" class="reviews-btn">Leave a review</button>
-      </div>
-    </section>
+    <section id="chocolate-is-loved-section" class="reviews">
+  <div class="container">
+    <h2 class="reviews-title">
+      <span class="reviews-title-word">chocolate</span> is loved
+    </h2>
+    <div class="swiper">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <img
+            srcset="/simply-chocolate-super-team/assets/reviews-img1-min-bae55cef.png 1x, /simply-chocolate-super-team/assets/reviews-img1@2x-min-d938ea39.png 2x"
+            class="reviews-img"
+            src="/simply-chocolate-super-team/assets/reviews-img1-min-bae55cef.png"
+            alt="people"
+            width="80"
+            loading="lazy"
+          />
+          <h3 class="reviews-name">Victoria Dobrzhanska</h3>
+          <p class="reviews-text">
+            I love this chocolate bar. Perfect combination of light crispy
+            wafer, covered in a thin layer chocolate.
+          </p>
+        </li>
+        <li class="swiper-slide">
+          <img
+            srcset="/simply-chocolate-super-team/assets/reviews-img2-min-214e91e2.png 1x, /simply-chocolate-super-team/assets/reviews-img2@2x-min-1e26864d.png 2x"
+            class="reviews-img"
+            src="/simply-chocolate-super-team/assets/reviews-img2-min-214e91e2.png"
+            alt="people"
+            width="80"
+            loading="lazy"
+          />
+          <h3 class="reviews-name">Nazar Babenko</h3>
+          <p class="reviews-text">
+            This chocolate confection is a delight! A delight! The wafer is
+            light and crisp, the hazelnut cream is smooth, and the chocolate is
+            good.
+          </p>
+        </li>
+        <li class="swiper-slide">
+          <img
+            srcset="/simply-chocolate-super-team/assets/reviews-img3-min-be7c7b0e.png 1x, /simply-chocolate-super-team/assets/reviews-img3@2x-min-2c99bf5b.png 2x"
+            class="reviews-img"
+            src="/simply-chocolate-super-team/assets/reviews-img3-min-be7c7b0e.png"
+            alt="people"
+            width="80"
+            loading="lazy"
+          />
+          <h3 class="reviews-name">Olena Kampusch</h3>
+          <p class="reviews-text">
+            Chocolate is a family favourite treat. Love the delicious smooth
+            chocolate and the creaminess inside. The wafer is soft but crunchy.
+          </p>
+        </li>
+        <li class="swiper-slide">
+          <img
+            srcset="/simply-chocolate-super-team/assets/reviews-img4-min-ae3f7016.png 1x, /simply-chocolate-super-team/assets/reviews-img4@2x-min-85c45438.png 2x"
+            class="reviews-img"
+            src="/simply-chocolate-super-team/assets/reviews-img4-min-ae3f7016.png"
+            alt="people"
+            width="80"
+            loading="lazy"
+          />
+          <h3 class="reviews-name">Natalia Sus</h3>
+          <p class="reviews-text">
+            The chocolate assortment was delicious. Both dark and milk chocolate
+            pieces were smooth and just right on the sweetness level.
+          </p>
+        </li>
+        <li class="swiper-slide">
+          <img
+            srcset="/simply-chocolate-super-team/assets/reviews-img5-min-b11d649c.png 1x, /simply-chocolate-super-team/assets/reviews-img5@2x-min-1fcd5e61.png 2x"
+            class="reviews-img"
+            src="/simply-chocolate-super-team/assets/reviews-img5-min-b11d649c.png"
+            alt="people"
+            width="80"
+            loading="lazy"
+          />
+          <h3 class="reviews-name">Danilo Nottingham</h3>
+          <p class="reviews-text">
+            This is delicious. It so rich and flavorful you don’t need to use as
+            many. I love topping an apple with almond butter and these chips for
+            a snack.
+          </p>
+        </li>
+        <li class="swiper-slide">
+          <img
+            srcset="/simply-chocolate-super-team/assets/reviews-img6-min-464e6ac3.png 1x, /simply-chocolate-super-team/assets/reviews-img6@2x-min-58da3d61.png 2x"
+            class="reviews-img"
+            src="/simply-chocolate-super-team/assets/reviews-img6-min-464e6ac3.png"
+            alt="people"
+            width="80"
+            loading="lazy"
+          />
+          <h3 class="reviews-name">Irina Tydnyuk</h3>
+          <p class="reviews-text">
+            This is simply the best chocolate around, and I'm just thrilled to
+            support a local company! Best local chocolate - world class :&#41;
+          </p>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </div>
+    <button type="button" class="reviews-btn">Leave a review</button>
+  </div>
+</section>
+
     <!------------------ Marina Sihida -------------------->
 <section class="subscribe">
   <div class="subscribe-content">
