@@ -1,6 +1,13 @@
 .modal-leave-review-container {
   max-width: 317px;
   max-height: 471px;
+  background-color: #ffffff;
+}
+
+.modal-leave-review {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 32px;
 }
 
 .modal-leave-review-header {
