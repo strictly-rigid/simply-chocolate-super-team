@@ -81,7 +81,7 @@
         called Cacao. Cacao has been around for thousands of years and was first
         discovered by the Native American tribe called the Mayans.
       </p>
-      <button data-modal-open-buynow type="button" class="top-sell-btn">
+      <button data-modal="1" type="button" class="top-sell-btn js-open-modal">
         Buy now
       </button>
     </div>
@@ -89,9 +89,9 @@
 </section>
 
 <!-- MODAL BUY NOW -->
-<div data-modal-buynow class="backdrop modal-buy-now is-hidden">
-  <button data-modal-close-buynow class="modal-buy-now-close">
-    <svg width="24" height="24">
+<div data-modal="1" class="backdrop modal modal-buy-now">
+  <button class="modal-buy-now-close">
+    <svg class="js-modal-close" width="24" height="24">
       <use href="./img/icons.svg#simple-close-btn"></use>
     </svg>
   </button>
@@ -230,12 +230,6 @@
       <p>Comment</p>
       <textarea name="comment" placeholder="Enter text"></textarea>
     </label>
-    <button
-      data-modal-close-submit-buynow
-      class="modal-buy-now-form-submit"
-      type="submit"
-    >
-      Submit
-    </button>
+    <button class="modal-buy-now-form-submit" type="submit">Submit</button>
   </form>
 </div>
