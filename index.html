@@ -593,16 +593,18 @@
         called Cacao. Cacao has been around for thousands of years and was first
         discovered by the Native American tribe called the Mayans.
       </p>
-      <button type="button" class="top-sell-btn">Buy now</button>
+      <button data-modal-open type="button" class="top-sell-btn">
+        Buy now
+      </button>
     </div>
   </div>
 </section>
 
 <!-- MODAL BUY NOW -->
-<!-- <div class="modal-buy-now">
-  <button class="modal-buy-now-close">
+<div data-modal class="backdrop modal-buy-now is-hidden">
+  <button data-modal-close class="modal-buy-now-close">
     <svg width="24" height="24">
-      <use href="./img/icons.svg#simple-close-btn"></use>
+      <use href="/simply-chocolate-super-team/assets/icons-83087ff5.svg#simple-close-btn"></use>
     </svg>
   </button>
   <h2 class="modal-buy-now-title"><span>BUY</span> NOW</h2>
@@ -716,7 +718,7 @@
           placeholder="Phone number"
         />
         <svg class="svg-ua" width="24" height="24">
-          <use href="./img/icons.svg#ukraine"></use>
+          <use href="/simply-chocolate-super-team/assets/icons-83087ff5.svg#ukraine"></use>
         </svg>
         <p class="ua-code">+380</p>
         ,
@@ -732,7 +734,7 @@
           placeholder="Enter card"
         />
         <svg class="svg-mastercard" width="32" height="21">
-          <use href="./img/icons.svg#mastercard"></use>
+          <use href="/simply-chocolate-super-team/assets/icons-83087ff5.svg#mastercard"></use>
         </svg>
       </div>
     </label>
@@ -740,9 +742,17 @@
       <p>Comment</p>
       <textarea name="comment" placeholder="Enter text"></textarea>
     </label>
-    <button class="modal-buy-now-form-submit" type="submit">Submit</button>
+    <button
+      data-modal-close-submit
+      class="modal-buy-now-form-submit"
+      type="submit"
+    >
+      Submit
+    </button>
   </form>
-</div> -->
+</div>
+
+<script src="./js/buy-now-modal.js"></script>
 
     <section id="chocolate-is-loved-section" class="reviews">
   <div class="container">
