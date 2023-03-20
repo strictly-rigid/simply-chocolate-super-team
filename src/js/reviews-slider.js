@@ -1,5 +1,5 @@
- import Swiper from 'swiper/bundle';
- import 'swiper/css/bundle';
+//  import Swiper from 'swiper/bundle';
+//  import 'swiper/css/bundle';
 const swiper = new Swiper('.swiper', {
   pagination: {
     el: '.swiper-pagination',
@@ -11,4 +11,3 @@ const swiper = new Swiper('.swiper', {
     320: { slidesPerView: 1 },
   },
 });
-
