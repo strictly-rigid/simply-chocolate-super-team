@@ -17,7 +17,7 @@
     />
     
     <script type="module" crossorigin src="/simply-chocolate-super-team/assets/index-2851d9bb.js"></script>
-    <link rel="stylesheet" href="/simply-chocolate-super-team/assets/index-3431b29a.css">
+    <link rel="stylesheet" href="/simply-chocolate-super-team/assets/index-560533ea.css">
   </head>
   <body>
     <!-- <p>Hello World</p> -->
@@ -180,54 +180,52 @@
   <script src="../js/burger-menu.js"></script>
 </header>
 
-    <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/simply-chocolate-super-team/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simply Chocolate</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    
-  </head>
-  <section class="container" id="#home">
-    <div class="hero__bcg">
-      <h1 class="visuality-hidden">Great chocolate</h1>
-      <h2 class="hero__text">
-        <span class="hero__firstword">Treat </span>yourself or a loved one to<br />
-        our finest ingredients for a moment of pure delight!
-      </h2>
+    <section class="container" id="#home">
+  <div class="hero__bcg">
+    <h1 class="visuality-hidden">Great chocolate</h1>
+    <h2 class="hero__text">
+      <span class="hero__firstword">Treat </span>yourself or a loved one to<br />
+      our finest ingredients for a moment of pure delight!
+    </h2>
 
-      <div class="hero__buttons">
-        <button class="hero__button" type="button" data-modal-open>
-          Buy now
-        </button>
+    <div class="hero__buttons">
+      <button class="hero__button js-open-modal" data-modal="1" type="button">
+        Buy now
+      </button>
 
-        <a class="hero__anchor" href="#how-its-made-section">How it’s made</a>
+      <a class="hero__anchor" href="#how-its-made-section">How it’s made</a>
 
-        <a class="hero__link" href="#footer">
-          scroll down
+      <a class="hero__link" href="#footer">
+        scroll down
 
-          <svg class="hero__scroll-icon" width="28" height="16">
-            <use
-              href="../img/icons.svg#scroll-btn"
-              width="28"
-              height="16"
-            ></use></svg
-        ></a>
-      </div>
+        <svg class="hero__scroll-icon" width="28" height="16">
+          <use
+            href="/simply-chocolate-super-team/assets/icons-83087ff5.svg#scroll-btn"
+            width="28"
+            height="16"
+          ></use></svg
+      ></a>
     </div>
-  </section>
-</html>
+  </div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("a[href*='#']").on('click', function (e) {
+      var anchor = $(this);
+      $('html, body')
+        .stop()
+        .animate(
+          {
+            scrollTop: $(anchor.attr('href')).offset().top,
+          },
+          777
+        );
+      e.preventDefault();
+      return false;
+    });
+  });
+</script>
 
     <section class="section-advantages">
   <h2 class="advantages-visually-hidden">Advantages</h2>
