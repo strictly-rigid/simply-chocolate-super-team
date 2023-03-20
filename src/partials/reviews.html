@@ -115,10 +115,93 @@
             support a local company! Best local chocolate - world class :&#41;
           </p>
         </li>
-        
       </ul>
       <div class="swiper-pagination"></div>
     </div>
     <button type="button" class="reviews-btn">Leave a review</button>
   </div>
+
+  <!-- -------------------MODAL LEAVE REVIEW --------------------->
+
+  <div class="modal-leave-review-container">
+    <div class="modal-leave-review-wraper">
+      <form class="modal-leave-review">
+        <button data-modal-close class="modal-leave-review-close-btn">
+          <svg class="modal-leave-review-close-icon">
+            <use href="../img/icons.svg#simple-close-btn"></use>
+          </svg>
+        </button>
+
+        <h2 class="modal-leave-review-header">
+          LEAVE A REVIEW <br />
+          ABOUT <span>OUR CHOCOLATE</span>
+        </h2>
+        <label class="modal-leave-review-field">
+          <span class="modal-name">
+            <input
+              type="text"
+              name="user_name"
+              class="modal-leave-review-input"
+              placeholder="Name"
+              pattern="[a-zA-Zа-яА-Я]+"
+              minlength="3"
+            />
+          </span>
+        </label>
+
+        <label class="modal-leave-review-field">
+          <span class="modal-email">
+            <input
+              type="email"
+              name="user_email"
+              class="modal-leave-review-input"
+              placeholder="Email"
+            />
+          </span>
+        </label>
+        <label class="modal-leave-review-field">
+          <div class="modal-leave-review-wrap">
+            <span class="modal-phone">
+              <input
+                type="tel"
+                name="user_phone"
+                class="modal-leave-review-input modal-leave-review-input-phone"
+                placeholder="Phone number"
+              />
+              <svg class="modal-leave-review-icon" width="24" height="18">
+                <use href="/img/icons.svg#ukraine"></use>
+              </svg>
+              <p class="modal-leave-review-phone-code">+380</p>
+            </span>
+          </div>
+        </label>
+        <label class="modal-leave-review-field modal-leave-review-comment">
+          <textarea
+            name="user_message"
+            class="modal-leave-review-input modal-leave-review-message"
+            placeholder="Enter text"
+          ></textarea>
+        </label>
+
+        <button type="submit" class="modal-leave-review-btn">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ====POPUP REVIEW THANK YOU====== -->
+
+  <div class="popup-thanks is-open" popupfeedback>
+    <button type="button" class="popup-close-btn" popup-close>
+      <svg class="popup-close-icon">
+        <use href="../img/icons.svg#simple-close-btn"></use>
+      </svg>
+    </button>
+    <h3 class="popup-thanks-title">
+      thank you <br />
+      for your feedback!
+    </h3>
+    <p class="popup-thanks-text">We are so happy to hear from you!</p>
+  </div>
+
+  <!-- /====POPUP REVIEW THANK YOU====== -->
 </section>
