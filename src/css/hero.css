@@ -82,7 +82,7 @@ only screen and (min-resolution: 144dpi) {
 .hero__anchor {
     margin-bottom: 23px;
     padding: 12px 28px;
-
+    scroll-behavior: smooth;
 
     font-weight: 600;
     font-size: 14px;
@@ -122,6 +122,7 @@ only screen and (min-resolution: 144dpi) {
     line-height: 1.21;
 
     color: var(--primary-white-color);
+    scroll-behavior: smooth;
     transition: background-color var(--transition-timing) var(--transition-function),
         border-color var(--transition-timing) var(--transition-function),
         color var(--transition-timing) var(--transition-function)
