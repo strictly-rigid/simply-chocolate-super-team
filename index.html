@@ -21,8 +21,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/simply-chocolate-super-team/assets/index-562e7306.js"></script>
-    <link rel="stylesheet" href="/simply-chocolate-super-team/assets/index-c50abc83.css">
+    <script type="module" crossorigin src="/simply-chocolate-super-team/assets/index-c93bf9dd.js"></script>
+    <link rel="stylesheet" href="/simply-chocolate-super-team/assets/index-9b655f0b.css">
   </head>
   <body>
     <!-- <p>Hello World</p> -->
@@ -591,7 +591,7 @@
 </section>
 
 <!-- MODAL BUY NOW -->
-<div data-modal="1" class="backdrop modal modal-buy-now">
+<div data-modal="1" class="modal modal-buy-now">
   <button class="modal-buy-now-close">
     <svg class="js-modal-close" width="24" height="24">
       <use href="/simply-chocolate-super-team/assets/icons-83087ff5.svg#simple-close-btn"></use>
@@ -853,17 +853,17 @@
       finest ingredients and handcrafted with the utmost care, each piece is a
       work of art that is sure to please.
     </p>
-    <button data-modal-open class="subscribe-btn" type="button">
+    <button data-modal="5" class="js-open-modal subscribe-btn" type="button">
       Subscribe
     </button>
   </div>
 
   <!--------------- MODAL Subscribe ------------->
 
-  <div class="backdrop is-hidden">
-    <div data-modal class="subscribe-modal">
+  <!-- <div class="backdrop is-hidden"> -->
+    <div data-modal="5" class="modal subscribe-modal">
       <div class="subscribe-modal-picture">
-        <button data-modal-close class="subscribe-btn-close">
+        <button class="subscribe-btn-close  js-modal-close">
           <svg class="subscribe-btn-close-icon">
             <use href="../img/icons.svg#simple-close-btn"></use>
           </svg>
@@ -884,11 +884,11 @@
               placeholder="Enter your email"
             />
           </label>
-          <button class="subscribe-submit-btn" type="submit">Submit</button>
+          <button class="subscribe-submit-btn js-modal-close" type="submit">Submit</button>
         </div>
       </div>
     </div>
-  </div>
+  <!-- </div> -->
 </section>
 
     <footer class="footer" id="footer">
