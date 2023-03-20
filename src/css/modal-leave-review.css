@@ -1,25 +1,37 @@
 .modal-leave-review-container {
-  position: absolute;
-  max-width: 317px;
+  position: relative;
+  max-width: 311px;
   max-height: 471px;
   background-color: #ffffff;
+  padding: 24px 32px;
 }
 
-.modal-leave-review {
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 32px;
+.modal-leave-review-close-btn {
+  border-radius: 50%;
+  background-color: transparent;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal-leave-review-close-icon {
   position: absolute;
+  width: 24px;
+  height: 24px;
   top: 14px;
   right: 14px;
+  fill: black;
   stroke: black;
 }
 
 .modal-leave-review-header {
-  margin-bottom: 40px;
+  width: 252px;
+  margin-bottom: 32px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--primary-text-color);
 }
 
 .modal-leave-review-header span {
@@ -29,14 +41,15 @@
 .modal-leave-review-input {
   width: 263px;
   height: 45px;
+  margin-bottom: 14px;
   padding-left: 18px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 8px;
 }
 
-.modal-leave-review-input {
-  margin-bottom: 14px;
+.modal-leave-review-input-phone {
+  padding-left: 106px;
 }
 
 .modal-leave-review-comment {
@@ -108,10 +121,16 @@
   .modal-leave-review-container {
     max-width: 517px;
     max-height: 631px;
+    padding: 40px;
   }
 
   .modal-leave-review-btn {
     min-width: 117px;
     padding: 14px 40px;
+  }
+
+  .modal-leave-review-input {
+    width: 437px;
+    margin-bottom: 19px;
   }
 }
