@@ -5,7 +5,7 @@
 }
 
 .product {
-    margin-bottom: 72px;
+    padding-bottom: 72px;
     background-color: #FAFAFA;
 }
 
@@ -34,6 +34,10 @@
 
     color: var(--contrast-color);
 }
+.product-cards {
+    display: flex;
+    overflow-x: scroll;
+}
 
 
 .product-card {
@@ -41,10 +45,14 @@
     background: var(--primary-white-color);
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
+    min-width: 100%;
 }
 
 .hidden-card {
-    display: none;
+    display: inline-block ;
+}
+.swiper-card {
+    display: block;
 }
 
 .product-images {
@@ -92,9 +100,30 @@
     line-height: calc(17/14);
     color: var(--primary-text-color);
 }
-.swiper-card {
-    display: none;
+
+/* =====================scroll====================== */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
 }
+
+/* Фон трека */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Ползунок */
+::-webkit-scrollbar-thumb {
+
+    background: var(--contrast-color);
+    border-radius: 5px;
+}
+
+/* Угол */
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
 
 @media screen and (min-width: 320px) and (max-width: 374px) {
     .product-container {
@@ -113,9 +142,25 @@
 
     .product {
         overflow-x: scroll;
-        margin-bottom: 128px;
+        padding-bottom: 128px;
     }
-
+    .product-cards {
+        overflow-x: scroll;
+    }
+    .product-title {
+        
+        font-weight: 600;
+        font-size: 24px;
+        line-height: calc(28px / 24px);
+        margin-bottom: 50px;
+        
+    
+    }
+    .product-title-text {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: calc(28px / 24px);
+    }
 
     .hidden-card {
         display: block;
@@ -148,27 +193,27 @@
     }
 
     /* =====================scroll====================== */
-         ::-webkit-scrollbar {
-             width: 5px;
-             height: 5px;
-         }
-    
+        ::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+        }    
          /* Фон трека */
-         ::-webkit-scrollbar-track {
-             background: #f1f1f1;
-         }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
     
          /* Ползунок */
-         ::-webkit-scrollbar-thumb {
-    
-             background: var(--contrast-color);
-             border-radius: 5px;
-         }
+        ::-webkit-scrollbar-thumb {
+            
+            background: var(--contrast-color);
+            border-radius: 5px;
+        }
     
          /* Угол */
-         ::-webkit-scrollbar-corner {
-             background: #f1f1f1;
-         }
+        ::-webkit-scrollbar-corner {
+            background: transparent;
+        }
+
     
 
 }
