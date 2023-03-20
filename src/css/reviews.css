@@ -1,6 +1,6 @@
 /* reviews */
 .reviews {
-  background-color: #fafafa;
+  background-color: var( --secondary-white-color);
   color: var(--primary-text-color);
   padding-bottom: 72px;
 }
@@ -16,14 +16,7 @@
 }
 
 .reviews-title {
-  text-align: center;
   margin-bottom: 30px;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
   .reviews-title {
@@ -67,7 +60,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.3;
-  letter-spacing: -0.02em;
   color: rgba(17, 17, 17, 0.7);
 }
 .reviews-btn {
@@ -80,7 +72,10 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2;
-  color: #111111;
+  color: var(--primary-text-color);
+   transition: color var(--transition-timing) var(--transition-function), 
+  background-color var(--transition-timing) var(--transition-function);
+
 }
 @media screen and (min-width: 768px) {
   .reviews-btn {
@@ -88,6 +83,13 @@
     font-size: 18px;
     line-height: calc(22px / 18px);
   }
+}
+.reviews-btn:hover,
+.reviews-btn:focus{
+  background-color: var(--contrast-color);
+  color: var(--primary-white-color);
+  transition: color var(--transition-timing) var(--transition-function), 
+  background-color var(--transition-timing) var(--transition-function);
 }
 
 .reviews-img {
@@ -130,7 +132,7 @@ transform: translateX(-50%);
   background: rgba(17, 17, 17, 0.1);
   width: 13px;
   height: 13px;
-  transition: width 250ms linear, border-radius 250ms linear;
+  transition: width var(--transition-timing) var(--transition-function), border-radius var(--transition-timing) var(--transition-function);
 }
 .swiper-pagination-bullet-active {
   background-color:var(--contrast-color);
