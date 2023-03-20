@@ -29,6 +29,7 @@
 .modal-leave-review-input {
   width: 263px;
   height: 45px;
+  padding-left: 18px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 8px;
@@ -49,6 +50,44 @@
   letter-spacing: -0.02em;
 
   color: rgba(64, 64, 64, 0.3);
+  padding-left: 14px;
+}
+
+.modal-leave-review-wrap {
+  position: relative;
+}
+
+.modal-leave-review-icon {
+  position: absolute;
+  top: 14px;
+  left: 18px;
+}
+
+.modal-leave-review-phone-code {
+  position: absolute;
+  left: 50px;
+  top: 14px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+}
+
+.modal-leave-review-phone-code::after {
+  content: '';
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  margin-left: 8px;
+
+  display: inline-block;
+  width: 1.5px;
+  height: 25px;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .modal-leave-review-btn {
