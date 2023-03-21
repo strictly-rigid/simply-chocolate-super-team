@@ -21,7 +21,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/simply-chocolate-super-team/assets/index-bc609e79.js"></script>
+    <script type="module" crossorigin src="/simply-chocolate-super-team/assets/index-b3fb2bb7.js"></script>
     <link rel="stylesheet" href="/simply-chocolate-super-team/assets/index-9025bf68.css">
   </head>
   <body>
@@ -230,6 +230,9 @@
 <script>
   $(document).ready(function () {
     $("a[href*='#']").on('click', function (e) {
+      // Reset hover and focus styles
+      $(this).blur();
+
       var anchor = $(this);
       $('html, body')
         .stop()
