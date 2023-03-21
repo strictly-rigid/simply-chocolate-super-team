@@ -28,10 +28,10 @@
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (min--moz-device-pixel-ratio: 1.5),
-  only screen and (-o-min-device-pixel-ratio: 3/2),
-  only screen and (min-resolution: 1.5dppx),
-  only screen and (min-resolution: 144dpi) {
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 144dpi) {
   .hero__bcg {
     background-image: url(../img/Hero/hero_bcg_mobile@2x.jpg);
   }
@@ -68,8 +68,7 @@
   border-radius: 100px;
   background-color: var(--contrast-color);
 
-  transition: background-color var(--transition-timing)
-      var(--transition-function),
+  transition: background-color var(--transition-timing) var(--transition-function),
     border-color var(--transition-timing) var(--transition-function),
     color var(--transition-timing) var(--transition-function);
 }
@@ -88,8 +87,7 @@
   border-radius: 100px;
   background-color: transparent;
 
-  transition: background-color var(--transition-timing)
-      var(--transition-function),
+  transition: background-color var(--transition-timing) var(--transition-function),
     border-color var(--transition-timing) var(--transition-function),
     color var(--transition-timing) var(--transition-function);
 }
@@ -117,8 +115,7 @@
 
   color: var(--primary-white-color);
   scroll-behavior: smooth;
-  transition: background-color var(--transition-timing)
-      var(--transition-function),
+  transition: background-color var(--transition-timing) var(--transition-function),
     border-color var(--transition-timing) var(--transition-function),
     color var(--transition-timing) var(--transition-function);
 }
@@ -132,8 +129,7 @@
   background-color: var(--primary-white-color);
   fill: var(--contrast-color);
   stroke: var(--contrast-color);
-  transition: background-color var(--transition-timing)
-      var(--transition-function),
+  transition: background-color var(--transition-timing) var(--transition-function),
     stroke var(--transition-timing) var(--transition-function),
     color var(--transition-timing) var(--transition-function),
     fill var(--transition-timing) var(--transition-function);
@@ -152,11 +148,9 @@
   fill: var(--primary-white-color);
 }
 
-@media screen and (min-width: 320px) and (max-width: 374.99px) {
-}
+@media screen and (min-width: 320px) and (max-width: 374.99px) {}
 
-@media screen and (min-width: 375px) {
-}
+@media screen and (min-width: 375px) {}
 
 @media screen and (min-width: 768px) {
   .hero__bcg {
@@ -166,10 +160,10 @@
   }
 
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-    only screen and (min--moz-device-pixel-ratio: 1.5),
-    only screen and (-o-min-device-pixel-ratio: 3/2),
-    only screen and (min-resolution: 1.5dppx),
-    only screen and (min-resolution: 144dpi) {
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-resolution: 1.5dppx),
+  only screen and (min-resolution: 144dpi) {
     .hero__bcg {
       background-image: url(../img/Hero/hero_bcg_tab@2x.jpg);
     }
@@ -218,10 +212,10 @@
   }
 
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-    only screen and (min--moz-device-pixel-ratio: 1.5),
-    only screen and (-o-min-device-pixel-ratio: 3/2),
-    only screen and (min-resolution: 1.5dppx),
-    only screen and (min-resolution: 144dpi) {
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-resolution: 1.5dppx),
+  only screen and (min-resolution: 144dpi) {
     .hero__bcg {
       background-image: url(../img/Hero/hero_bcg_desk@2x.jpg);
     }
@@ -259,11 +253,11 @@
   }
 }
 
-/* =====POPUP THANKS===== */
+/* =====POPUP THANKS YOU FOR YOUR FEEDBACK!===== */
 
-.popup-thanks {
+/* .popup-thanks {
+
   position: relative;
-  /* position: fixed; */
   width: 100%;
   height: 350px;
 
@@ -321,6 +315,7 @@
   padding-right: 24px;
   margin-bottom: 8px;
 }
+
 .popup-thanks-text {
   font-family: 'Montserrat';
   font-style: normal;
@@ -353,6 +348,7 @@
     height: 414px;
     background-image: url(../img/background-popup/background-popup-tablet-desktop@1x.png);
   }
+
   .popup-close-btn {
     top: 24px;
     right: 26px;
@@ -361,6 +357,7 @@
     width: 38px;
     height: 38px;
   }
+
   .popup-thanks-title {
     font-size: 24px;
     line-height: calc(28 / 24);
@@ -369,14 +366,16 @@
     padding-right: 44px;
     margin-bottom: 8px;
   }
+
   .popup-thanks-text {
     font-size: 18px;
     line-height: calc(24 / 18);
     padding-left: 163px;
     padding-right: 44px;
   }
+
   .popup-close-icon {
     width: 22px;
     height: 22px;
   }
-}
+} */
