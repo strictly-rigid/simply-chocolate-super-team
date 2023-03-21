@@ -3,7 +3,7 @@
 }
 
 .top-sell-title {
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .top-sell-title span {
@@ -73,7 +73,9 @@
   }
 
   .top-sell-title {
-    padding-bottom: 50px;
+    font-size: 24px;
+    line-height: calc(28px / 24px);
+    margin-bottom: 50px;
   }
 
   .top-sell-text-mob {
