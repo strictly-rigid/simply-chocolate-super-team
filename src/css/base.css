@@ -55,10 +55,17 @@ h2 {
     padding-left: 32px;
     padding-right: 32px;
   }
+
+  .advantages-list {
+    width: 700px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+  }
+  .advantages-list {
+    width: 1100px;
   }
 }
