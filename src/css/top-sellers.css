@@ -213,6 +213,12 @@
   margin-bottom: 8px;
 }
 
+.modal-buy-now-input-name-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
 .modal-buy-now-form-label input,
 textarea {
   height: 45px;
@@ -320,8 +326,6 @@ textarea::placeholder {
   transform: translate(-50%, -50%) scale(0.9);
 } */
 
-
-
 @media screen and (min-width: 768px) {
   .modal-buy-now {
     width: 609px;
@@ -356,7 +360,7 @@ textarea::placeholder {
   }
 
   .modal-buy-now-input-name-wrap {
-    display: flex;
+    flex-direction: row;
     gap: 21px;
   }
 
