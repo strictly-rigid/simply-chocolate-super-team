@@ -3,7 +3,7 @@
 }
 
 .top-sell-title {
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .top-sell-title span {
@@ -75,7 +75,9 @@
   }
 
   .top-sell-title {
-    padding-bottom: 50px;
+    font-size: 24px;
+    line-height: calc(28px / 24px);
+    margin-bottom: 50px;
   }
 
   .top-sell-text-mob {
@@ -219,6 +221,12 @@
   margin-bottom: 8px;
 }
 
+.modal-buy-now-input-name-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
 .modal-buy-now-form-label input,
 textarea {
   height: 45px;
@@ -326,8 +334,6 @@ textarea::placeholder {
   transform: translate(-50%, -50%) scale(0.9);
 } */
 
-
-
 @media screen and (min-width: 768px) {
   .modal-buy-now {
     width: 609px;
@@ -362,7 +368,7 @@ textarea::placeholder {
   }
 
   .modal-buy-now-input-name-wrap {
-    display: flex;
+    flex-direction: row;
     gap: 21px;
   }
 

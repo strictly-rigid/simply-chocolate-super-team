@@ -115,13 +115,13 @@
 
 @media screen and (min-width: 768px) {
   .swiper-wrapper {
-    gap: 16px;
+    gap: 9px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .swiper-wrapper {
-    gap: 28px;
+    gap: 22px;
   }
 }
 
@@ -142,7 +142,7 @@
 }
 
 .swiper-pagination-bullet {
-  background: rgba(17, 17, 17, 0.1);
+  background: rgba(17, 17, 17, 0.5);
   width: 13px;
   height: 13px;
   transition: width var(--transition-timing) var(--transition-function),

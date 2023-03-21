@@ -11,8 +11,8 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 20;
   transition: 0.3s all;
-}
 
+}
 
 /* Стили для активных классов подложки и окна */
 
@@ -21,3 +21,5 @@
   opacity: 1;
   visibility: visible;
 }
+
+

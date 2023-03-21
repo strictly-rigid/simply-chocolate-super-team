@@ -5,14 +5,14 @@
         <span class="header-span-simply">Simply</span>
         <span class="header-span-chocolate">Chocolate</span>
         <svg class="header-logo-icon" width="21" height="21">
-          <use href="../img/icons.svg#chocolate-logo"></use>
+          <use href="/img/icons.svg#chocolate-logo"></use>
         </svg>
       </a>
       <ul class="menu list header-menu-nav">
         <li class="header-menu-item">
           <a
             class="header-menu-link header-menu-link-active link current"
-            href="../index.html"
+            href="#home"
             >Home</a
           >
         </li>
@@ -45,7 +45,7 @@
           class="header-social-list-link header-dark"
         >
           <svg class="header-social-link-icon" width="24" height="24">
-            <use href="../img/icons.svg#insta"></use>
+            <use href="/img/icons.svg#insta"></use>
           </svg>
         </a>
       </li>
@@ -55,24 +55,28 @@
           class="header-social-list-link header-dark"
         >
           <svg class="header-social-link-icon" width="24" height="24">
-            <use href="../img/icons.svg#twitter"></use>
+            <use href="/img/icons.svg#twitter"></use>
           </svg>
         </a>
       </li>
     </ul>
-    <button type="button" class="header-mobile-menu-open" data-menu-open>
+    <!-- <button type="button" class="header-mobile-menu-open" data-menu-open> -->
+      <button data-modal="1" class="js-open-modal header-mobile-menu-open" type="button">
       <svg class="header-mobile-menu-open-icon" width="28" height="28">
-        <use href="../img/icons.svg#burger-menu"></use>
+        <use href="/img/icons.svg#burger-menu"></use>
       </svg>
     </button>
   </div>
   <!-- Mobile Menu -->
 
-  <div class="header-mobile-menu" data-menu>
+  <!-- <div class="header-mobile-menu" data-menu> -->
+    <div data-modal="1" class="modal header-mobile-menu">
     <div class="container header-mobile-menu-cont">
-      <button type="button" class="header-mobile-menu-close" data-menu-close>
+      <!-- <button type="button" class="header-mobile-menu-close" data-menu-close> -->
+        <button type="button" class="header-mobile-menu-close js-modal-close">
+
         <svg class="header-mobile-menu-close-icon" width="28" height="28">
-          <use href="../img/icons.svg#simple-close-btn"></use>
+          <use href="/img/icons.svg#simple-close-btn"></use>
         </svg>
       </button>
 
@@ -80,7 +84,7 @@
         <li class="mob-header-menu-item">
           <a
             class="mob-header-menu-link mob-header-menu-link-active link current"
-            href="../index.html"
+            href="#home"
             >Home</a
           >
         </li>
@@ -126,7 +130,7 @@
                 width="20"
                 height="20"
               >
-                <use href="../img/icons.svg#insta"></use>
+                <use href="/img/icons.svg#insta"></use>
               </svg>
             </a>
           </li>
@@ -137,7 +141,7 @@
                 width="20"
                 height="20"
               >
-                <use href="../img/icons.svg#twitter"></use>
+                <use href="/img/icons.svg#twitter"></use>
               </svg>
             </a>
           </li>
