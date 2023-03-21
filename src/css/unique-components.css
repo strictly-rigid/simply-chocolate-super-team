@@ -34,20 +34,19 @@
     margin-bottom: 20px;
 }
 
-
-.unique-list-item {
-    background-color: var(--contrast-color);
-    border: 1px solid var(--contrast-color);
-    border-radius: 15px;
-
-}
-
 .unique-list-item:nth-child(2n + 2) {
     background-color: var(--primary-white-color);
 }
 
 .unique-list-item:nth-last-child(2) {
     background-color: var(--dark-background-color);
+}
+
+.unique-list-item {
+    background-color: var(--contrast-color);
+    border: 1px solid var(--contrast-color);
+    border-radius: 15px;
+
 }
 
 .item-3 {
@@ -80,98 +79,6 @@
 }
 
 
-/* !!!!!!!!!!!!!!!!!!                 FLIP-CARD        !!!!!!!!!!!!!!!!!!!!! */
-.flip-card-container {
-    background-color: transparent;
-    width: 336px;
-    height: 270px;
-    perspective: 600px;
-}
-
-.flip-card-container:hover>.card-inner {
-    cursor: pointer;
-    transform: rotateY(180deg) rotateZ(180deg);
-}
-
-.card-inner {
-    position: relative;
-    width: 336px;
-    height: 100%;
-    transition: transform 1500ms;
-    transform-style: preserve-3d;
-}
-
-.flip-card-front,
-.flip-card-back {
-    width: 336px;
-    height: 100%;
-    border-radius: 15px;
-    position: absolute;
-    backface-visibility: hidden;
-}
-
-.flip-card-back {
-    background-color: var(--primary-white-color);
-    transform: rotateY(180deg) rotateZ(180deg);
-}
-
-.flip-card-wrapper {
-    margin: 28px;
-
-
-}
-
-.flip-card-title {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.22;
-    text-transform: uppercase;
-    color: #111111;
-}
-
-.flip-card-btn {
-    display: flex;
-    gap: 6px;
-
-}
-
-.flip-btn-main {
-    border-radius: 35px;
-    padding: 6px 16px;
-    background-color: var(--contrast-color);
-    color: var(--primary-white-color);
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 1.2;
-    margin-top: 8px;
-    margin-bottom: 14px;
-    text-align: center;
-
-}
-
-.flip-btn-second {
-    background-color: #FAFAFA;
-    border: 1px solid var(--contrast-color);
-    border-radius: 35px;
-    padding: 6px 16px;
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 1.2;
-    margin-top: 8px;
-    margin-bottom: 14px;
-    text-align: center;
-
-}
-
-.flip-card-after-title {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.28;
-    color: #111111;
-    height: 146px;
-    overflow: hidden;
-}
-
 /* !!!!!!!!!!!!!!!!!!!!            TABLET        !!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 @media screen and (min-width: 768px) {
@@ -202,15 +109,14 @@
 
     .unique-list .unique-list-item {
         margin-bottom: 0;
-        width: 336px;
-        /* width: calc((100% - 32px) / 2); */
+        width: calc((100% - 32px) / 2);
     }
 
     .unique-list {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 32px 32px;
+        gap: 32px;
     }
 
     .item-1 {
@@ -231,10 +137,7 @@
 
 }
 
-
-
-
-
+/*  !!!!!!!!!!!                 DESKTOP         !!!!!!!!!!!!!!!!! */
 
 
 @media screen and (min-width: 1200px) {
@@ -246,7 +149,7 @@
     .unique-list .unique-list-item {
         width: 270px;
     }
-
+  
     .unique-list {
         flex-wrap: nowrap;
     }
@@ -265,21 +168,6 @@
 
     .item-2 {
         order: 1;
-    }
-
-
-    .flip-card-container {
-        height: 270px;
-        width: 270px;
-    }
-
-    .card-inner {
-        width: 270px;
-    }
-
-    .flip-card-front,
-    .flip-card-back {
-        width: 270px;
     }
 
 }
