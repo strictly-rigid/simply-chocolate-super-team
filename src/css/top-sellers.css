@@ -132,13 +132,13 @@
   transform: translate(-50%, 0%) scale(1);
   z-index: 40;
 
-
   width: 311px;
   border-radius: 15px;
   padding: 32px 24px;
 
   background-color: var(--secondary-white-color);
-
+  max-height: 95vh;
+  overflow-y: scroll;
 }
 
 .modal-buy-now-close {
@@ -377,4 +377,5 @@ textarea::placeholder {
   }
 }
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+}
