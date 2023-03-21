@@ -58,10 +58,11 @@
 }
 
 @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
   .subscribe {
-    background-image: url(../img/subscribe/Subcribe2x-375.jpg); /* Картинка. 2х 🙂 */
+    background-image: url(../img/subscribe/Subcribe2x-375.jpg);
+    /* Картинка. 2х 🙂 */
   }
 }
 
@@ -87,15 +88,15 @@
 } */
 
 .subscribe-modal {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
-    /* z-index: 2; */
   width: 95%;
   max-width: 311px;
   height: 95%;
   max-height: 350px;
   overflow: hidden;
+  z-index: 50;
 
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -140,10 +141,11 @@
 }
 
 @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
   .subscribe-modal-picture {
-    background-image: url(../img/subscribe/subscribe-modal-2x-311.jpg); /* Картинка. 2х 🙂 */
+    background-image: url(../img/subscribe/subscribe-modal-2x-311.jpg);
+    /* Картинка. 2х 🙂 */
   }
 }
 
@@ -189,7 +191,8 @@
   position: absolute;
   top: 50%;
   right: 0;
-  transform: translateY(-50%); /* margin: 0; */
+  transform: translateY(-50%);
+  /* margin: 0; */
   padding: 14px 28px;
   background: var(--contrast-color);
   border-radius: 100px;
@@ -219,10 +222,11 @@
   }
 
   @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
     .subscribe {
-      background-image: url(../img/subscribe/Subcribe2x-768.jpg); /* Картинка. 2х 🙂 */
+      background-image: url(../img/subscribe/Subcribe2x-768.jpg);
+      /* Картинка. 2х 🙂 */
     }
   }
 
@@ -266,8 +270,8 @@
   }
 
   @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
     .subscribe-modal-picture {
       background-image: url(../img/subscribe/subscribe-modal-2x-538.jpg);
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -308,10 +312,11 @@
   }
 
   @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
     .subscribe {
-      background-image: url(../img/subscribe/Subcribe2x-1200.jpg); /* Картинка. 2х 🙂 */
+      background-image: url(../img/subscribe/Subcribe2x-1200.jpg);
+      /* Картинка. 2х 🙂 */
     }
   }
 }

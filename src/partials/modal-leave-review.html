@@ -1,7 +1,10 @@
-<div class="modal-leave-review-container">
+<div data-modal="3" class="modal modal-leave-review-container">
   <div class="modal-leave-review-wraper">
     <form class="modal-leave-review">
-      <button data-modal-close class="modal-leave-review-close-btn">
+      <button
+        data-modal-close
+        class="modal-leave-review-close-btn js-modal-close"
+      >
         <svg class="modal-leave-review-close-icon">
           <use href="../img/icons.svg#simple-close-btn"></use>
         </svg>
@@ -58,7 +61,13 @@
         ></textarea>
       </label>
 
-      <button type="submit" class="modal-leave-review-btn">Send</button>
+      <button
+        type="submit"
+        class="js-open-modal modal-leave-review-btn js-modal-close"
+        data-modal="4"
+      >
+        Send
+      </button>
     </form>
   </div>
 </div>
