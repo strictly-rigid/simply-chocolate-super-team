@@ -79,6 +79,7 @@
 
 .footer-svg {
   stroke: #ffffff;
+  fill: transparent;
 }
 
 .footer-bottom {
