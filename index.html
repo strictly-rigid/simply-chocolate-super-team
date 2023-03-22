@@ -22,7 +22,7 @@
     />
     
     <script type="module" crossorigin src="/simply-chocolate-super-team/assets/index-5386edc2.js"></script>
-    <link rel="stylesheet" href="/simply-chocolate-super-team/assets/index-5877560c.css">
+    <link rel="stylesheet" href="/simply-chocolate-super-team/assets/index-cbe3e290.css">
   </head>
   <body>
     <!-- <p>Hello World</p> -->
@@ -829,8 +829,8 @@
   </ul>
   <form>
     <label class="modal-buy-now-form-label">
-      <p>Personal information</p>
-      <div class="modal-buy-now-input-name-wrap">
+      <span>Personal information</span>
+      <span class="modal-buy-now-input-name-wrap">
         <input
           type="text"
           name="name"
@@ -843,51 +843,44 @@
           name="surname"
           pattern="[A-Za-z]{1,255}"
           placeholder="Surname"
-          autofocus
         />
-      </div>
+      </span>
     </label>
     <label class="modal-buy-now-form-label">
-      <p>Email</p>
-      <input
-        type="email"
-        name="email"
-        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-        placeholder="Enter your email"
-      />
-    </label>
-    <label class="modal-buy-now-form-label">
-      <p>Phone number</p>
-      <div class="modal-buy-now-input-wrap">
+      <span>Email</span>
+      <span class="modal-buy-now-input-name-retreat">
         <input
-          type="tel"
-          name="phone"
-          pattern="[0-9]{9}"
-          placeholder="Phone number"
+          type="email"
+          name="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          placeholder="Enter your email"
         />
+      </span>
+    </label>
+    <label class="modal-buy-now-form-label">
+      <span>Phone number</span>
+      <span class="modal-buy-now-input-wrap">
+        <input type="tel" name="phone" placeholder="Phone number" />
         <svg class="svg-ua" width="24" height="24">
           <use href="/simply-chocolate-super-team/assets/icons-83087ff5.svg#ukraine"></use>
         </svg>
-        <p class="ua-code">+380</p>
-      </div>
+        <span class="ua-code">+380</span>
+      </span>
     </label>
     <label class="modal-buy-now-form-label">
-      <p>Card number</p>
-      <div class="modal-buy-now-input-wrap">
-        <input
-          type="number"
-          name="card"
-          pattern="[0-9]{16}"
-          placeholder="Enter card"
-        />
+      <span> Card number</span>
+      <span class="modal-buy-now-input-wrap">
+        <input type="number" name="card" placeholder="Enter card" />
         <svg class="svg-mastercard" width="32" height="21">
           <use href="/simply-chocolate-super-team/assets/icons-83087ff5.svg#mastercard"></use>
         </svg>
-      </div>
+      </span>
     </label>
     <label class="modal-buy-now-form-label">
-      <p>Comment</p>
-      <textarea name="comment" placeholder="Enter text"></textarea>
+      <span>Comment</span>
+      <span class="modal-buy-now-input-wrap">
+        <textarea name="comment" placeholder="Enter text"></textarea>
+      </span>
     </label>
     <button
       data-modal="2"
@@ -1076,7 +1069,7 @@
   <!-- ====POPUP REVIEW THANK YOU====== -->
 
   <div class="modal popup-thanks" data-modal="4">
-    <button type="button" class="popup-close-btn js-modal-close" popup-close>
+    <button type="button" class="popup-close-btn js-modal-close">
       <svg class="popup-close-icon">
         <use href="/simply-chocolate-super-team/assets/icons-83087ff5.svg#simple-close-btn"></use>
       </svg>
