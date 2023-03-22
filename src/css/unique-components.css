@@ -201,6 +201,20 @@
 
 }
 
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    .flip-card-front,
+    .flip-card-back {
+        width: 270px;
+    }
+    .card-inner {
+        width: 270px;
+    }
+    .unique-list-item {
+        width: 270px;
+    }
+
+}
+
 /* !!!!!!!!!!!!!!!!!!!!            TABLET        !!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 @media screen and (min-width: 768px) and (max-width: 1199.99px) {
