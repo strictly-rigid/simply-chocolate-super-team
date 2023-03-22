@@ -69,20 +69,20 @@
   padding-left: 14px;
 }
 
-.modal-leave-review-wrap {
+.modal-leave-review-field-svg {
   position: relative;
 }
 
 .modal-leave-review-icon {
   position: absolute;
-  top: 14px;
+  top: 0;
   left: 18px;
 }
 
 .modal-leave-review-phone-code {
   position: absolute;
   left: 50px;
-  top: 14px;
+  top: 1px;
 
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
