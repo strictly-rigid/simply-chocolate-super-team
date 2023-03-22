@@ -79,6 +79,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2;
+  margin-top: 32px;
   color: var(--primary-text-color);
   transition: color var(--transition-timing) var(--transition-function),
     background-color var(--transition-timing) var(--transition-function);
@@ -88,6 +89,7 @@
   .reviews-btn {
     padding: 14px 40px;
     font-size: 18px;
+    margin-top: 50px;
     line-height: calc(22px / 18px);
   }
 }
@@ -132,13 +134,6 @@
 /* slider */
 .swiper-pagination {
   position: static;
-  margin-bottom: 32px;
-}
-
-@media screen and (min-width: 768px) {
-  .swiper-pagination {
-    margin-bottom: 50px;
-  }
 }
 
 .swiper-pagination-bullet {
