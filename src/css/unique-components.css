@@ -21,6 +21,7 @@
 }
 
 .unique-after-title {
+
     font-weight: 400;
     font-size: 14px;
     line-height: 1.28;
@@ -43,14 +44,29 @@
 }
 
 .unique-list-item {
-    background-color: var(--contrast-color);
+    width: 335px;
+    height: 100%;
     border: 1px solid var(--contrast-color);
     border-radius: 15px;
 
 }
 
-.item-3 {
+.item__bcg-1 {
+    background-color: var(--contrast-color);
+}
+
+.item__bcg-2 {
+    border-color: var(--contrast-color);
+}
+
+.item__bcg-3 {
+    background-color: var(--dark-background-color);
     border: none;
+}
+
+.item__bcg-4 {
+    border-color: var(--contrast-color);
+
 }
 
 
@@ -79,9 +95,107 @@
 }
 
 
+/* !!!!!!!!!!!!!!!!!!                 FLIP-CARD        !!!!!!!!!!!!!!!!!!!!! */
+.flip-card-container {
+    background-color: transparent;
+    margin-bottom: 20px;
+
+}
+
+.flip-card-container:hover>.card-inner {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.card-inner {
+    position: relative;
+    width: 335px;
+    height: 270px;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+    perspective: 700px;
+}
+
+.flip-card-front,
+.flip-card-back {
+    width: 335px;
+    height: 270px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    background-color: var(--primary-white-color);
+    transform: rotateY(180deg);
+}
+
+.flip-card-wrapper {
+    margin: 28px;
+
+
+}
+
+.flip-card-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+    text-transform: uppercase;
+    color: #111111;
+}
+
+.flip-card-btn {
+    display: flex;
+    gap: 6px;
+
+}
+
+.flip-btn-main {
+    border-radius: 35px;
+    padding: 6px 16px;
+    background-color: var(--contrast-color);
+    color: var(--primary-white-color);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    margin-top: 8px;
+    margin-bottom: 14px;
+    text-align: center;
+
+}
+
+
+
+.flip-btn-second {
+    background-color: #FAFAFA;
+    border: 1px solid var(--contrast-color);
+    border-radius: 35px;
+    padding: 6px 16px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 8px;
+    margin-bottom: 14px;
+    text-align: center;
+
+}
+
+
+
+
+.flip-card-after-title {
+    overflow: hidden;
+}
+
 /* !!!!!!!!!!!!!!!!!!!!            TABLET        !!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.99px) {
+
+    .flip-card-container {
+        margin-bottom: 0;
+    }
+
     .unique-components {
         padding-top: 100px;
         padding-bottom: 100px;
@@ -109,49 +223,96 @@
 
     .unique-list .unique-list-item {
         margin-bottom: 0;
-        width: calc((100% - 32px) / 2);
+
     }
 
     .unique-list {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 32px;
+        gap: 32px 32px;
     }
 
     .item-1 {
-        order: 0;
+
+        order: 1;
     }
 
     .item-2 {
-        order: 2;
-    }
-
-    .item-3 {
         order: 3;
     }
 
+    .item-3 {
+        order: 4;
+    }
+
     .item-4 {
-        order: 1;
+        order: 2;
     }
 
 }
 
-/*  !!!!!!!!!!!                 DESKTOP         !!!!!!!!!!!!!!!!! */
+
+
+
+
 
 
 @media screen and (min-width: 1200px) {
+
+    .unique-title {
+        max-width: 486px;
+        margin: 0 auto 28px auto;
+
+    }
+
+    .unique-after-title {
+        width: 486px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     .unique-components {
         padding-top: 128px;
         padding-bottom: 132px;
     }
 
-    .unique-list .unique-list-item {
+    .unique-list {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+
+
+    .flip-card-container {
+        margin-bottom: 0;
+    }
+
+    .flip-card-front,
+    .flip-card-back {
         width: 270px;
     }
-  
-    .unique-list {
-        flex-wrap: nowrap;
+
+    .item__bcg-1 {
+        width: 270px;
+    }
+
+    .item__bcg-2 {
+        width: 270px;
+        border-color: var(--contrast-color);
+    }
+
+    .item__bcg-3 {
+        width: 270px;
+    }
+
+    .item__bcg-4 {
+        width: 270px;
+        border-color: var(--contrast-color);
+    }
+
+    .card-inner {
+        width: 270px;
     }
 
     .unique-list {
