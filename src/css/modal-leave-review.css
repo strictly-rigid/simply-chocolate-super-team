@@ -4,7 +4,7 @@
   max-height: 471px;
   background-color: #ffffff;
   border-radius: 15px;
-  padding: 24px 32px;
+  padding: 32px 24px;
   z-index: 50;
 }
 
@@ -45,6 +45,7 @@
   width: 263px;
   height: 45px;
   margin-bottom: 14px;
+  padding: 0;
   padding-left: 18px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
@@ -109,6 +110,7 @@
 .modal-leave-review-comment textarea {
   height: 91px;
   resize: none;
+  padding-top: 14px;
 }
 
 .modal-leave-review-btn {
@@ -144,5 +146,9 @@
 
   .modal-leave-review-comment textarea {
     height: 137px;
+  }
+
+  br {
+    display: none;
   }
 }
