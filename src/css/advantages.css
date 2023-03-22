@@ -95,6 +95,7 @@
   }
 
   .advantages-list {
+
     flex-wrap: nowrap;
     justify-content: center;
     gap: 70px;
@@ -103,6 +104,7 @@
   .advantages-item {
     width: 1100px;
     position: relative;
+    width: 1100px;
   }
 
   .advantages-item + .advantages-item::after {
