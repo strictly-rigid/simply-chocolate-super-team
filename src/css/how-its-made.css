@@ -34,6 +34,9 @@
     color: var(--contrast-color);
 }
 
+iframe {
+    border-width: 0px;
+}
 
 .h-i-m-video {
     width: 100%;
