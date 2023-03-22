@@ -19,9 +19,11 @@ el: '.swiper-scrollbar',
 
 breakpoints: {
 1200: { slidesPerView: 4 },
-768: { slidesPerView: 2 },
+768: { slidesPerView: 2.5 },
 320: { slidesPerView: 1 },
 },
 loop: false,
+
+
 
 });
