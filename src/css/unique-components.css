@@ -201,17 +201,23 @@
 
 }
 
-@media screen and (min-width: 320px) and (max-width: 374px) {
+/* !!!!!!!!!!!!!!!!!!!!      MOBILE 320       !!!!!!!!!!!!!!!!!!!!!!! */
+
+@media screen and (max-width: 374.99px) {
+
     .flip-card-front,
     .flip-card-back {
-        width: 270px;
+        width: 100%;
     }
+
     .card-inner {
-        width: 270px;
+        width: 100%;
     }
+
     .unique-list-item {
-        width: 270px;
+        width: 100%;
     }
+
 
 }
 
