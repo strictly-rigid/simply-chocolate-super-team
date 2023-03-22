@@ -152,7 +152,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 374px) {
     .product-container {
-        max-width: 375px;
+        max-width: 100%;
     }
 }
 
