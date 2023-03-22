@@ -6,7 +6,7 @@
 
 .product {
     padding-bottom: 72px;
-    background-color: #fff;
+    background-color: var(--secondary-white-color);
 }
 
 .product-title {
@@ -140,6 +140,9 @@
     padding: 0 !important;
 
 }
+.swiper-pagination {
+    margin-bottom: 0 !important;
+}
 
 
 
@@ -164,7 +167,7 @@
 
     .product {
         /* overflow-x: scroll; */
-        padding-bottom: 128px;
+        padding-bottom: 100px;
     }
 
     .product-cards {
@@ -243,16 +246,6 @@
 
     /* ==================SWIPER========================= */
 
-    /* .swiper.my-custom-class .swiper-wrapper {
-
-            min-width: 270px !important;
-            min-height: 364px !important;
-            gap: 0;
-
-        }
-        .swiper.my-custom-class .swiper-slide {
-            padding: 0 !important;
-        } */
     .swiper.my-custom-class {
         width: 100% !important;
         overflow-x: hidden !important;
@@ -271,14 +264,20 @@
 
     }
 
-    .swiper.my-custom-class .swiper-slide {
-        margin-right: 18px !important;
+    .swiper.my-custom-class .swiper-slide:not(:last-child) {
+        margin-right: 13px !important;
         border: 1px solid rgba(17, 17, 17, 0.1) !important;
     }
+    
+    .product-card.swiper-card {
+        border-right: 1px solid rgba(17, 17, 17, 0.1);
+        border-radius: 15px;
+    }
+    /* .swiper-pagination {
+        
+    } */
+    
 
-    /* .swiper.my-custom-class .swiper-slide:last-child {
-            margin-right: 0;
-        } */
 
 
 
@@ -288,8 +287,12 @@
 /* ============================DESKTOP======================= */
 
 @media screen and (min-width: 1200px) {
+    
     .product-container {
         width: 1200px;
+    }
+    .product {
+        padding-bottom: 128px;
     }
 
     .product-info {
@@ -345,6 +348,7 @@
     .swiper.my-custom-class .swiper-slide:not(:last-child) {
         margin-right: 15px !important;
     }
+    
 
 
 }
