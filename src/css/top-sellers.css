@@ -45,13 +45,16 @@
   text-align: center;
 
   transition: color var(--transition-timing) var(--transition-function),
-    backgroundcolor var(--transition-timing) var(--transition-function);
+    background-color var(--transition-timing) var(--transition-function);
 }
 
 .top-sell-btn:hover,
+.top-sell-btn:focus,
 .modal-buy-now-form-submit:hover {
   background-color: var(--primary-hover-color);
   color: var(--contrast-color);
+  transition: color var(--transition-timing) var(--transition-function),
+    background-color var(--transition-timing) var(--transition-function);
 }
 
 .top-sell-btn-wrap {
