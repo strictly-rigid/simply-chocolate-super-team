@@ -127,6 +127,8 @@
 
 /* MODAL BUY NOW */
 
+
+
 .modal-buy-now {
   position: absolute;
   left: 50%;
@@ -225,6 +227,7 @@
 }
 
 .modal-buy-now-input-name-wrap {
+  width: 246px;
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -334,6 +337,44 @@ textarea::placeholder {
   transition: color var(--transition-timing) var(--transition-function),
     backgroundcolor var(--transition-timing) var(--transition-function);
 }
+
+.personal-info {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.personal-info__name {
+  width: 246px;
+}
+
+.personal-info__surname {
+  width: 246px;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border: 2px solid red;
+}
+
+input:valid:not(:placeholder-shown) {
+  border: 2px solid lightgreen;
+}
+
+input:invalid:not(:placeholder-shown)+.form__error {
+  display: block;
+}
+
+.form__error {
+  color: red;
+  text-align: left;
+  font-size: 12px;
+  display: block;
+  margin-top: 3px;
+  display: none;
+}
+
+
 
 /* .backdrop.is-hidden {
   opacity: 0;
