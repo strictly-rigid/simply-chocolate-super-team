@@ -179,37 +179,49 @@
 
 .modal-buy-now-list {
   display: flex;
-  margin-bottom: 59px;
+  flex-direction: column;
+  margin-bottom: 32px;
+  gap: 8px;
 }
 
 .modal-buy-now-list-item {
-  width: 231px;
-  height: 257px;
-  padding: 32px 32px 28px 32px;
+  width: 263px;
+  height: 85px;
+  padding: 8px 16px;
   margin: 0 auto;
 
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 
   background: var(--primary-white-color);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
 }
 
-.modal-buy-now-list-item img {
+/* .modal-buy-now-list-item {
+  width: 231px;
+  height: 257px;
+  padding: 32px 32px 28px 32px;
+
+  flex-direction: column;
+
+} */
+
+/* .modal-buy-now-list-item img {
   width: 167px;
   height: 148px;
-}
+} */
 
-.modal-buy-now-list-item:not(:first-child) {
+/* .modal-buy-now-list-item:not(:first-child) {
   display: none;
-}
+} */
 
 .modal-buy-now-list-item-desc {
   padding: 8px 27px;
   width: 96px;
-  margin-top: 16px;
+  font-weight: 600;
+  /* margin-top: 16px; */
 
   background: var(--secondary-white-color);
   border: 1px solid rgba(17, 17, 17, 0.1);
@@ -232,16 +244,16 @@
 }
 
 .modal-buy-now-input-name-wrap {
-  width: 246px;
+  width: 258px;
   display: flex;
   flex-direction: column;
   gap: 14px;
-  padding-top: 8px;
+  /* padding-top: 8px; */
 }
 
 .modal-buy-now-input-name-retreat {
   display: block;
-  padding-top: 8px;
+  /* padding-top: 8px; */
 }
 
 .modal-buy-now-form-label input,
@@ -277,7 +289,7 @@ textarea::placeholder {
 
 .modal-buy-now-input-wrap {
   position: relative;
-  padding-top: 8px;
+  /* margin-top: 8px; */
 }
 
 .modal-buy-now-input-wrap svg {
@@ -347,16 +359,16 @@ textarea::placeholder {
   display: flex;
   align-items: end;
   justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
-.personal-info__name {
-  width: 246px;
+/* .personal-info__name {
+  width: 258px;
 }
 
 .personal-info__surname {
-  width: 246px;
-}
+  width: 258px;
+} */
 
 input:invalid:not(:placeholder-shown) {
   border: 2px solid red;
@@ -397,6 +409,7 @@ input:invalid:not(:placeholder-shown) + .form__error {
   .modal-buy-now-list {
     gap: 16px;
     margin-bottom: 40px;
+    flex-direction: row;
   }
 
   .modal-buy-now-list-item {
@@ -404,12 +417,8 @@ input:invalid:not(:placeholder-shown) + .form__error {
     height: 196px;
     padding: 24px 20px 18px 20px;
     margin: none;
-  }
 
-  .modal-buy-now-list-item:not(:first-child) {
-    display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
   .modal-buy-now-list-item img {
@@ -417,13 +426,26 @@ input:invalid:not(:placeholder-shown) + .form__error {
     height: 111px;
   }
 
-  .modal-buy-now-list-item-desc {
+  /* .modal-buy-now-list-item-desc {
     margin-top: 14px;
+  } */
+
+  .personal-info {
+    flex-wrap: nowrap;
   }
+
+  /* .personal-info__name {
+    width: 246px;
+  }
+
+  .personal-info__surname {
+    width: 246px;
+  } */
 
   .modal-buy-now-input-name-wrap {
     flex-direction: row;
     gap: 21px;
+    width: 246px;
   }
 
   .modal-buy-now-form-submit {
@@ -433,6 +455,7 @@ input:invalid:not(:placeholder-shown) + .form__error {
 
 @media screen and (min-width: 1200px) {
 }
+
 
 body.modal-buy-now-open {
   overflow: hidden;
@@ -460,3 +483,4 @@ body.modal-buy-now-open {
   visibility: hidden;
   pointer-events: none;
 }
+
