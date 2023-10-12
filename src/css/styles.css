@@ -12,8 +12,9 @@
 @import url('./reviews.css');
 @import url('./subscribe.css');
 @import url('./footer.css');
-@import url('./popup.css');
 @import url('./popup-feedback.css');
-@import url('./modals_Sihida.css');
-@import url('./overlay_Sihida.css');
+/* @import url('./popup.css'); */
+/* @import url('./modals_Sihida.css'); */
+/* @import url('./overlay_Sihida.css'); */
 @import url('./modal-leave-review.css');
+@import url('./modals.css');
